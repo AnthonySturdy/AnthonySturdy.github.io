@@ -42,7 +42,7 @@ function Start(){
     window.setInterval(function(){
         Loop();
         SetFavicon();
-    }, 200);
+    }, 20);
 }
 
 var posX = 0;
@@ -51,8 +51,8 @@ function Loop(){
     context.clearRect(0, 0, 16, 16);
 
     context.drawImage(favImg, posX, 0);
-    posX--;
+    posX -= 0.2;
     if(posX < -128){
-        posX = 0;
+        posX = 17;
     }
 }
