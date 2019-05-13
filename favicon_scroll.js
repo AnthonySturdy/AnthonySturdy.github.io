@@ -45,11 +45,14 @@ function Start(){
     }, 200);
 }
 
-var showing = true
+var posX = 0;
 
 function Loop(){
     context.clearRect(0, 0, 16, 16);
-    
-    context.drawImage(favImg, showing ? 0 : 1, 0);
-    showing = !showing;
+
+    context.drawImage(favImg, posX, 0);
+    posX -= 0.2;
+    if(posX < -128){
+        posX = 17;
+    }
 }
