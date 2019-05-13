@@ -42,7 +42,7 @@ function Start(){
     window.setInterval(function(){
         Loop();
         SetFavicon();
-    }, 20);
+    }, 100);
 }
 
 var showing = true
