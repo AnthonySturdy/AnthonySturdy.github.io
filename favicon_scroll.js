@@ -23,6 +23,7 @@ function LoadImage(){
         
     } else {
         Start();
+        console.log("start");
     }
 }
 
