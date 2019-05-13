@@ -48,9 +48,8 @@ function Start(){
 var posX = 0;
 
 function Loop(){
-    context.fillStyle="#00000000";
-    context.fillRect(0, 0, 16, 16);
+    context.clearRect(0, 0, 16, 16);
 
     context.drawImage(favImg, posX, 0);
-    posX++;
+    posX--;
 }
