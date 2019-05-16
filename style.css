@@ -6,12 +6,15 @@ body {
 	overflow: hidden;
 }
 
+img {
+	width: 250px;
+	position: fixed;
+	left: 1200px;
+	border: 2px solid rgb(117, 113, 94);
+}
+
 span {
 	color: rgb(230, 230, 230);
-}
-em {
-	font-style: normal;
-	color: #F92672;
 }
 strong {
 	font-weight: normal;
@@ -29,6 +32,11 @@ a:hover {
 }
 
 /*Custom div's*/
+.type {
+	font-style: normal;
+	color: #F92672;
+	display: inline-block;
+}
 .function {
 	position: absolute;
 	left: 85px;
@@ -92,4 +100,9 @@ a:hover {
 	position: relative;
 	left: 0px;
 	top: 90px;
+}
+.line_pos_portfolio {
+	position: relative;
+	left: 0px;
+	top: 108px;
 }
