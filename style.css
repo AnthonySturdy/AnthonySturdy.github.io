@@ -3,7 +3,7 @@ body {
 	font-family: monospace;
 	background-color: #272822;
 	font-size: 15px;
-	overflow: hidden;
+	overflow: auto;
 }
 
 img {
@@ -60,6 +60,10 @@ a:hover {
 	color: rgb(174, 129, 255);
 	display: inline-block;
 }
+.para{
+	color: #808080;
+	display: inline-block;
+}
 .line_number {
 	text-align: right;
 	left: 25px;
@@ -74,7 +78,7 @@ a:hover {
 /*Background Elements*/
 .box_line_number {
 	background: #1E1E1C;
-	position: absolute;
+	position: fixed;
 	width: 60px;
 	height: 100%;
 	left: 0;
