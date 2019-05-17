@@ -1,5 +1,16 @@
-//Credit to https://github.com/Mashpoe for the idea
+//Expandable Images
+$(document).ready(function() {
+    var imageLinks = $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]');
+    if (imageLinks.children('img').length) {
+        imageLinks.click(function(e) {
+            e.preventDefault();
+            $(this).children('img').toggleClass('expanded');
+        });
+    }
+});
 
+//Scrolling Favicon
+//Credit to https://github.com/Mashpoe
 var canvas = document.createElement("CANVAS");
 var context = canvas.getContext("2d");
 canvas.width = 16;
