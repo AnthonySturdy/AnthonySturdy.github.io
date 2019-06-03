@@ -22,6 +22,13 @@ img.expanded {
 	margin: auto;
 }
 
+.vid {
+	width: 250px;
+	position: fixed;
+	left: 1300px;
+	z-index: 1;
+}
+
 span {
 	color: rgb(230, 230, 230);
 }
