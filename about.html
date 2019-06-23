@@ -136,9 +136,21 @@
         i = (((today - born) / (oneyr - born))).toFixed(8);
 
     if(i > 20){
-        //I can't age backwards so this should always be above 20,
+        //I can't age backwards so this should always be above 20 (or my age if I remember to change it),
         //otherwise their system clock is wrong.
-        //Their clock could also be ahead but oh well
         document.getElementById("age").innerHTML = i;
     }
+    
+    setInterval(function() {
+        var born = new Date(1999, 0, 6),
+        oneyr = new Date(2000, 0, 6),
+        today = new Date(),
+        i = (((today - born) / (oneyr - born))).toFixed(8);
+
+    if(i > 20){
+        //I can't age backwards so this should always be above 20 (or my age if I remember to change it),
+        //otherwise their system clock is wrong.
+        document.getElementById("age").innerHTML = i;
+    }
+    }, 316);
 </script>
