@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Catamaran:400,700&display=swap');
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 p {
     margin: 0px;
 }
@@ -54,6 +59,7 @@ body {
     font-family: 'Catamaran', sans-serif;
     font-weight: 400;
     text-align: justify;
+    text-align-last: center;
     word-wrap: break-word;
     color: rgb(255, 255, 245);
     background-color: rgb(23, 23, 23);
@@ -63,4 +69,50 @@ body {
         100% 100%,
         0 calc(100% - 3vw)
     );
+}
+
+/* Portfolio section */
+.portfolio {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    top: 65vw;
+}
+
+.tab {
+    overflow: hidden;
+	border: none;
+	background-color: rgb(23, 23, 23);
+}
+
+.tab button {
+    font-size: 0.8vw;
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(255, 255, 245);
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 0.8vw;
+	transition: 0.1s;
+}
+
+.tab button:hover {
+	background-color: rgb(66, 76, 53)
+}
+
+.tab button.active {
+	background-color: rgb(53, 63, 46)
+}
+
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid rgb(23, 23, 23);
+    border-top: none;
+    font-size: 0.8vw;
+    font-family: 'Catamaran', sans-serif;
 }
