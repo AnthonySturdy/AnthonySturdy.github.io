@@ -79,6 +79,7 @@ body {
     padding-left: 20vw;
     padding-right: 20vw;
     top: 65vw;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .tab {
@@ -89,9 +90,9 @@ body {
 
 .tab button {
     font-size: 0.8vw;
-    font-family: 'Catamaran', sans-serif;
     color: rgb(255, 255, 245);
-	background-color: inherit;
+    background-color: inherit;
+    font-family: 'Catamaran', sans-serif;
 	float: left;
 	border: none;
 	outline: none;
@@ -115,4 +116,37 @@ body {
     border-top: none;
     font-size: 0.8vw;
     font-family: 'Catamaran', sans-serif;
+}
+
+table {
+    border-spacing: 1vw;
+    table-layout: fixed;
+}
+
+td {
+    font-family: 'Lato', sans-serif;
+    border: none;
+    background-color: rgb(23, 23, 23);
+    color: rgb(255, 255, 245);
+    font-weight: 400;
+    font-size: 0.9vw;
+    text-align: left;
+    align-content: center;
+    word-wrap: break-word;
+    cursor: pointer;
+    vertical-align: top;
+    padding: 0.3vw 0.5vw 0.3vw 0.3vw;
+}
+
+td p {
+    display:inline;
+}
+
+td span {
+    color: rgb(199, 203, 178);
+}
+
+td img {
+    width: 100%;
+    padding: 0.1vw;
 }
