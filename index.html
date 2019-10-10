@@ -6,7 +6,6 @@
         <meta name="keywords" content="Anthony Sturdy, Programmer, Game Developer, UK, England, Staffordshire University, Games">
         <link rel="canonical" href="http://anthonysturdy.co.uk/">
         <link href="index.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="index.js"></script>
     </head>
 
     <body>
@@ -31,96 +30,94 @@
         <!-- Portfolio section -->
         <div class="portfolio">
             <p style="font-weight: 700; text-align: center; font-size: 1.5vw; color: rgb(23, 23, 23);">PORTFOLIO</p><br>
-
-            <!-- Tab links -->
-            <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'All')">All</button>
-                <button class="tablinks" onclick="openCity(event, 'University')">University</button>
-                <button class="tablinks" onclick="openCity(event, 'College')">College</button>
-                <button class="tablinks" onclick="openCity(event, 'Personal')">Personal</button>
-            </div>
             
             <!-- Tab content -->
-            <div id="All" class="tabcontent" style="display: block; padding: 0px;">
-                <table style="width: 100%">
-                    <tr>
-                        <td onClick="document.location.href='alt-site/index.html';"> <!-- LINK -->
-                            <img src="Images/E1M1_4.png"> <!-- IMAGE -->
-                            <span>2019</span><br> <!-- DATE -->
-                            <p>E1M1 FreeGLUT</p><br> <!-- TITLE -->
-                            <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
-                                The original Doom level 'E1M1' rendered with OpenGL using FreeGLUT. 
-                            </p>
-                        </td>
-                        <td onClick="document.location.href='alt-site/index.html';"> <!-- LINK -->
-                            <img src="Images/SDL_Mario_3.png"> <!-- IMAGE -->
-                            <span>2019</span><br> <!-- DATE -->
-                            <p>SDL Mario Bros.</p><br> <!-- TITLE -->
-                            <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
-                                Super Mario Bros recreated in SDL with a built-in level editor.
-                            </p>
-                        </td>
-                        <td onClick="document.location.href='alt-site/index.html';"> <!-- LINK -->
-                            <img src="Images/OLE_1.png"> <!-- IMAGE -->
-                            <span>2019</span><br> <!-- DATE -->
-                            <p>OLE Store Website</p><br> <!-- TITLE -->
-                            <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
-                                Storepage for a pretend games company to sell games and DLC. 
-                            </p>
-                        </td>
-                        <td onClick="document.location.href='alt-site/index.html';"> <!-- LINK -->
-                            <img src="Images/Fake_3D_3.png"> <!-- IMAGE -->
-                            <span>2018</span><br> <!-- DATE -->
-                            <p>Fake 3D Dungeon</p><br> <!-- TITLE -->
-                            <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
-                                3D wave-based dungeon game rendered in a 2D framework.
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td onClick="document.location.href='alt-site/index.html';"> <!-- LINK -->
-                            <img src="Images/Case_White_2.png"> <!-- IMAGE -->
-                            <span>2018</span><br> <!-- DATE -->
-                            <p>Case White</p><br> <!-- TITLE -->
-                            <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
-                                An retro themed FPS set in WW2 with procedurally generated levels. 
-                            </p>
-                        </td>
-                        <td onClick="document.location.href='alt-site/index.html';"> <!-- LINK -->
-                            <img src="Images/Secret_of_Malarith_1.png"> <!-- IMAGE -->
-                            <span>2017</span><br> <!-- DATE -->
-                            <p>Secret of Malarith</p><br> <!-- TITLE -->
-                            <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
-                                A small 2D RPG made at college in a group of three.
-                            </p>
-                        </td>
-                        <td onClick="document.location.href='alt-site/index.html';"> <!-- LINK -->
-                            <img src="Images/Reclaim_Earth_3.png"> <!-- IMAGE -->
-                            <span>2016</span><br> <!-- DATE -->
-                            <p>Reclaim Earth</p><br> <!-- TITLE -->
-                            <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
-                                A pixelated sci-fi FPS originally made for LOWREZJAM16.
-                            </p> 
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div id="University" class="tabcontent">
-                <p>Table of contents here UNIVERSITY.</p>       <!-- TODO: ADD PORTFOLIO CONTENT IN CATEGORIES -->
-            </div>
-            <div id="College" class="tabcontent">
-                <p>Table of contents here COLLEGE.</p>
-            </div>
-            <div id="Personal" class="tabcontent">
-                <p>Table of contents here PERSONAL.</p>
-            </div>
-
-            <script>
-                //Auto click 'All'
-                var mybtn = document.getElementsByClassName("tablinks")[0];
-                mybtn.click();
-            </script>
+            <table style="width: 100%">
+                <tr>
+                    <td onClick="document.location.href='e1m1.html';"> <!-- LINK -->
+                        <img src="Images/E1M1_4.png"> <!-- IMAGE -->
+                        <span>2019</span><br> <!-- DATE -->
+                        <p>E1M1 FreeGLUT</p><br> <!-- TITLE -->
+                        <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
+                            The original Doom level 'E1M1' rendered with OpenGL using FreeGLUT. 
+                        </p>
+                    </td>
+                    <td onClick="document.location.href='sdl_mario_bros.html';"> <!-- LINK -->
+                        <img src="Images/SDL_Mario_1.png"> <!-- IMAGE -->
+                        <span>2019</span><br> <!-- DATE -->
+                        <p>SDL Mario Bros.</p><br> <!-- TITLE -->
+                        <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
+                            Super Mario Bros recreated in SDL with a built-in level editor.
+                        </p>
+                    </td>
+                    <td onClick="document.location.href='ole_storepage.html';"> <!-- LINK -->
+                        <img src="Images/OLE_1.png"> <!-- IMAGE -->
+                        <span>2019</span><br> <!-- DATE -->
+                        <p>OLE Store Website</p><br> <!-- TITLE -->
+                        <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
+                            Storepage for a pretend games company to sell games and DLC. 
+                        </p>
+                    </td>
+                    <td onClick="document.location.href='fake_3d_dungeon.html';"> <!-- LINK -->
+                        <img src="Images/Fake_3D_3.png"> <!-- IMAGE -->
+                        <span>2018</span><br> <!-- DATE -->
+                        <p>'Fake' 3D Dungeon</p><br> <!-- TITLE -->
+                        <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
+                            3D wave-based dungeon game rendered in a 2D framework.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td onClick="document.location.href='case_white.html';"> <!-- LINK -->
+                        <img src="Images/Case_White_2.png"> <!-- IMAGE -->
+                        <span>2018</span><br> <!-- DATE -->
+                        <p>Case White</p><br> <!-- TITLE -->
+                        <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
+                            A retro themed FPS set in WW2 with procedurally generated levels. 
+                        </p>
+                    </td>
+                    <td onClick="document.location.href='secret_of_malarith.html';"> <!-- LINK -->
+                        <img src="Images/Secret_of_Malarith_1.png"> <!-- IMAGE -->
+                        <span>2017</span><br> <!-- DATE -->
+                        <p>Secret of Malarith</p><br> <!-- TITLE -->
+                        <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
+                            A small 2D RPG made at college in a group of three.
+                        </p>
+                    </td>
+                    <td onClick="document.location.href='reclaim_earth.html';"> <!-- LINK -->
+                        <img src="Images/Reclaim_Earth_3.png"> <!-- IMAGE -->
+                        <span>2016</span><br> <!-- DATE -->
+                        <p>Reclaim Earth</p><br> <!-- TITLE -->
+                        <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
+                            A pixelated sci-fi FPS originally made for LOWREZJAM16.
+                        </p> 
+                    </td>
+                </tr>
+            </table>
         </div>
 
+        <div class="contact">
+            <p style="font-weight: 700; text-align: center; font-size: 1.5vw;">CONTACT</p>
+            <br>
+            <table>
+                <tr>
+                    <td><a href="https://twitter.com/AnthonySturdy"><img src="Images/iconfinder_24-twitter_tweet_social_4202791.png" style="width: 75%;"></a></td>
+                    <td><a href="https://www.linkedin.com/in/anthonysturdy/"><img src="Images/iconfinder_56-linkedin_social_4202847.png" style="width: 75%;"></a></td>
+                    <td><a href="https://github.com/AnthonySturdy"><img src="Images/iconfinder_71-github_social_4202858.png" style="width: 75%;"></a></td>
+                    <td><a href="mailto:anthonysturdy123@gmail.com"><img src="Images/iconfinder_112-gmail_email_mail_social_4202766.png" style="width: 75%;"></a></td>
+                    <td><a href="https://vimeo.com/anthonysturdy"><img src="Images/iconfinder_20-vimeo_video_social_4202795.png" style="width: 75%;"></a></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="footer">
+            <div class="img-group" onClick="document.location.href='code-version/index.html';">
+                <p><b style="font-weight: 400; color: rgb(102, 217, 239);">&nbsp;Try_Me</b>();</p>
+                <img src="Images/code-fg.png">
+            </div>
+            <!--<img src="Images/code-fg.png" style="z-index: 2;">-->
+            Copyright Anthony Sturdy © 2019
+        </div>
     </body>
 </html>
