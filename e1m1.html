@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Anthony Sturdy</title>
+        <meta name="description" content="Anthony Sturdy is a Games Programming student from the UK.">
+        <meta name="keywords" content="Anthony Sturdy, Programmer, Game Developer, UK, England, Staffordshire University, Games">
+        <link rel="canonical" href="http://anthonysturdy.co.uk/e1m1.html"> <!-- CHANGE THIS LINK HERE -->
+        <link href="portfolio.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <span style="position: static; top: 2vw; cursor: pointer;" onClick="document.location.href='index.html';">Anthony Sturdy</span><br>
+        <h1 style="position: static; top: 4vw;">E1M1 FreeGLUT</h1>
+        <hr>
+        <br>
+        <table>
+            <td style="width: 20%">
+                <img src="Images/E1M1_1.png">
+                <img src="Images/E1M1_2.png">
+                <img src="Images/E1M1_3.png">
+                <iframe src="https://player.vimeo.com/video/340098697" width="100%" frameBorder="0" allow="autoplay; fullscreen"></iframe>
+            </td>
+            <td>
+                <h2>Summary</h2>
+                <p>This project is an E1M1 3D model being rendered in OpenGL using FreeGLUT. It was made for my 'Fundamentals of Game and Graphical Systems Development' module submission at University (Year 1, Semester 2). For the assignment, we were tasked to render multiple, textured 3D models using FreeGLUT and C++. I was able to find a 3D model of E1M1 online, which I then modified and UV unwrapped.</p>
+                <p>One of the biggest challenges of the project was the character controller, and how to handle collisions. I went with a nav-mesh system for collisions, which also allowed me to set the players height when traversing the map. There is another (invisible) mesh of only the map floor, which covers the entire walkable area. Which allows me to check whether the player is above walkable ground (if not it counts as a collision), and lets me set the height of the player as they walk up/down stairs, drop off of ledges, etc.</p>
+                <h2>Features</h2>
+                <ul>
+                    <li>OBJ Loading</li>
+                    <li>BMP Loading</li>
+                    <li>Texturing</li>
+                    <li>Simple lighting</li>
+                    <li>Player Controller</li>
+                    <li>Navigation Mesh and Radius collision</li>
+                </ul>
+                <h2>What I learned</h2>
+                <p>This project gave me and introduction to 3D rendering. It has taught me the basics of rendering using OpenGL, and what I have learned from this will help me in future projects to be able to make more advanced rendering software.</p>
+                <p>It helped me improve my problem solving skills. I also gained more experience using C++, and using good programming practices.</p>
+            </td>
+        </table>
+        <br>
+        <hr>
+    </body>
+</html>

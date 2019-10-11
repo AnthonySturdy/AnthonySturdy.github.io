@@ -172,7 +172,7 @@ td img {
     padding-top: 4vw;
     padding-bottom: 5vw;
     font-size: 1vw;
-    top: 105vw;
+    top: 102vw;
     font-family: 'Catamaran', sans-serif;
     font-weight: 400;
     text-align: justify;
@@ -198,7 +198,7 @@ td img {
 .footer {
     left: 0px;
     position: absolute;
-    top: 130vw;
+    top: 127vw;
     width: 100vw;
     font-family: 'Catamaran', sans-serif;
     text-align: center;
@@ -222,7 +222,6 @@ td img {
     width: 100%;
     bottom: 0px;
     left: 0px;
-    
 }
 
 .footer .img-group p {

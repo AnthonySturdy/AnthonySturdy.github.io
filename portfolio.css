@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+html, body {
+    border: 0px;
+    margin: 0px;
+}
+
+body { 
+    color: rgb(10, 10, 10);
+    background-color: rgb(255, 255, 245);
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 2vw;
+}
+
+span {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 2.5vw;
+    color: rgb(199, 203, 178);
+    background-color: rgb(23, 23, 23);
+    padding: 0.5vw;
+}
+
+br {
+    line-height: 1vw;
+}
+
+h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.7vw;
+}
+
+h2 {
+    font-size: 1.2vw;
+}
+
+p, li {
+    font-size: 0.84vw;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+    padding-left: 1vw;
+    vertical-align: top;
+}
+
+iframe {
+    width: 14vw;
+    max-height: calc(14vw * 0.56);
+    min-height: calc(14vw * 0.56);
+}
+
+td img {
+    width: 14vw;
+    padding-bottom: 1vw;
+}
