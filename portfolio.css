@@ -11,7 +11,7 @@ body {
     background-color: rgb(255, 255, 245);
     padding-left: 15vw;
     padding-right: 15vw;
-    padding-top: 2vw;
+    padding-top: 0vw;
 }
 
 span {
@@ -34,6 +34,15 @@ h1 {
 
 h2 {
     font-size: 1.2vw;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1vw;
+    color: rgb(255, 255, 245);
+    background-color: rgb(23, 23, 23);
+    display: inline-block;
+    padding: 0.2vw;
 }
 
 p, li {
@@ -61,4 +70,10 @@ iframe {
 td img {
     width: 14vw;
     padding-bottom: 1vw;
+}
+
+.footer {
+    font-family: 'Muli', sans-serif;
+    font-size: 0.8vw;
+    color: rgb(170, 170, 170);
 }
