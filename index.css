@@ -63,11 +63,18 @@ body {
     font-family: 'Catamaran', sans-serif;
     font-weight: 400;
     text-align: justify;
-    text-align-last: center;
+    -moz-text-align-last: center;
+         text-align-last: center;
     word-wrap: break-word;
     color: rgb(255, 255, 245);
     background-color: rgb(23, 23, 23);
-    clip-path: polygon(
+    -webkit-clip-path: polygon(
+        0 0,
+        100% calc(2vw),
+        100% 100%,
+        0 calc(100% - 2vw)
+    );
+            clip-path: polygon(
         0 0,
         100% calc(2vw),
         100% 100%,
@@ -79,7 +86,8 @@ body {
 .portfolio {
     position: absolute;
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding-left: 20vw;
     padding-right: 20vw;
     top: 65vw;
@@ -102,6 +110,8 @@ body {
 	outline: none;
 	cursor: pointer;
 	padding: 0.8vw;
+	-webkit-transition: 0.1s;
+	-o-transition: 0.1s;
 	transition: 0.1s;
 }
 
@@ -135,10 +145,13 @@ td {
     font-weight: 400;
     font-size: 0.9vw;
     text-align: left;
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     word-wrap: break-word;
     vertical-align: top;
     padding: 0.3vw 0.5vw 0.5vw 0.3vw;
+    -webkit-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
     transition: ease-out 0.2s;
 }
 
@@ -176,11 +189,18 @@ td img {
     font-family: 'Catamaran', sans-serif;
     font-weight: 400;
     text-align: justify;
-    text-align-last: center;
+    -moz-text-align-last: center;
+         text-align-last: center;
     word-wrap: break-word;
     color: rgb(255, 255, 245);
     background-color: rgb(23, 23, 23);
-    clip-path: polygon(
+    -webkit-clip-path: polygon(
+        0 1vw,
+        100% 0,
+        100% calc(100% - 1vw),
+        0 100%
+    );
+            clip-path: polygon(
         0 1vw,
         100% 0,
         100% calc(100% - 1vw),
@@ -212,8 +232,11 @@ td img {
     left: 0px;
     width: 4vw;
     height: 4vw;
+    -webkit-transition: ease 0.3s;
+    -o-transition: ease 0.3s;
     transition: ease 0.3s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: #272822;
 }
 
