@@ -45,6 +45,10 @@ h3 {
     padding: 0.2vw;
 }
 
+a {
+    color: rgb(120, 125, 100);
+}
+
 p, li {
     font-size: 0.84vw;
 }
