@@ -4,7 +4,7 @@
         <title>Anthony Sturdy</title>
         <meta name="description" content="Anthony Sturdy is a Games Programming student from the UK.">
         <meta name="keywords" content="Anthony Sturdy, Programmer, Game Developer, UK, England, Staffordshire University, Games">
-        <link rel="canonical" href="http://anthonysturdy.co.uk/sdl_mario_bros.html"> <!-- CHANGE THIS LINK HERE -->
+        <link rel="canonical" href="http://anthonysturdy.co.uk/fake_3d_dungeon.html"> <!-- CHANGE THIS LINK HERE -->
         <link href="portfolio.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150268245-1"></script>
@@ -20,28 +20,28 @@
     <body>
         <h3 style="position: static; top: 2vw; cursor: pointer;" onClick="document.location.href='index.html';">&lt Back</h3><br>
         <span style="position: static; top: 2vw; cursor: pointer;" onClick="document.location.href='index.html';">Anthony Sturdy</span><br>
-        <h1 style="position: static; top: 4vw;">SDL Mario Bros.</h1>
+        <h1 style="position: static; top: 4vw;">'Fake' 3D Dungeon</h1>
         <hr>
         <br>
         <table>
             <td style="width: 20%">
-                <img src="Images/SDL_Mario_1.png">
-                <img src="Images/SDL_Mario_2.png">
-                <img src="Images/SDL_Mario_3.png">
-                <iframe src="https://player.vimeo.com/video/340096281" width="100%" frameBorder="0" allow="autoplay; fullscreen"></iframe>
+                <img src="Images/Fake_3D_1.png">
+                <img src="Images/Fake_3D_2.png">
+                <img src="Images/Fake_3D_3.png">
+                <iframe src="https://player.vimeo.com/video/343212932" width="100%" frameBorder="0" allow="autoplay; fullscreen"></iframe>
             </td>
             <td>
                 <h2>Summary</h2>
-                <p>This project is a remake of Super Mario Bros. using SDL and C++, with an in-game map editor. It was made for my Game Engine Creation module at Staffordshire University (Year 1, Semester 2). For the assignment, we were tasked to remake the original 1983 Mario Bros. game, then expand upon it. To expand the game, I added side-scrolling, more enemies, a level editor, updated collision system, etc.</p>
-                <p>The biggest challenge while developing the game, was perfecting the collision system. It took a lot of testing and tweaking so the character wouldn't get stuck in the ground or go through any walls.</p>
+                <p>This project is a simple wave-based dungeon game, the game has a 3D effect, but is rendered in a 2D framework called S2D (University's in-house framework). It was made for the my Fundamentals of Game and Graphical Systems Development module (Year 1, Semester 1), for the assignment we were tasked with creating a 2D game using the framework provided.</p>
+                <p>The 3D effect is achieved by layering multiple sprites per model, each sprite is a horizontal slice of the model, which is then positioned and rotated correctly to appear 3D.</p>
+                <p>The gameplay is an infinite wave-base game, where slimes spawn randomly, the objective is to survive as long as possible and reach the highest score, which is then uploaded to an online leaderboard to compare with others.</p>
                 <h2>Features</h2>
                 <ul>
+                    <li>3D Effect in 2D Engine</li>
                     <li>Character Controller</li>
-                    <li>Animation System</li>
-                    <li>Saving/Loading custom level to file</li>
-                    <li>2D Axis-Aligned Bounding Box Collision</li>
-                    <li>Two types of Enemy</li>
-                    <li>Custom Text Renderer</li>
+                    <li>Animations</li>
+                    <li>Online Leaderboard (hosted using <a href="http://dreamlo.com/">Dreamlo</a>)</li>
+                    <li>Enemy AI</li>
                 </ul>
                 <h2>What I learned</h2>
                 <p>This game taught me about using unfamiliar frameworks (SDL) and taught me about general game mechanics, such as collision detection, creating a character controller that feels good to use, and saving/loading data to a file.</p>
