@@ -1,6 +1,0 @@
-New "Professional" website ideas
-- Constant scrolling, all one page (Except maybe for portfolio pages?)
-- Peel tab at top right for code version
-- Top 'link' bar auto scrolls to each section
-- Tabbed table for each portfolio category (Uni, college, personal, all)
-- Abstract style (e.g. https://colorlib.com/wp/template/niko/, this but more muted colours?)
