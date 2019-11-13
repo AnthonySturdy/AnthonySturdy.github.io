@@ -271,10 +271,10 @@ td img {
     }
 
     .contact {
-        top: 123vw; /* MOVED DOWN BY 11 */
+        top: 120vw; /* MOVED DOWN BY 8 */
     }
 
     .footer {
-        top: 142vw; /* MOVED DOWN BY 15 */
+        top: 144vw; /* MOVED DOWN BY 17 */
     }
 }
