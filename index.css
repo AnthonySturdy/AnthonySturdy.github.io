@@ -267,14 +267,14 @@ td img {
 /* Mobile Spacing changes */
 @media screen and (max-width: 1023px) {
     .portfolio {
-        top: 75vw;  /* MOVED DOWN BY 10 */
+        top: 76vw;  /* MOVED DOWN BY 11 */
     }
 
     .contact {
-        top: 124vw; /* MOVED DOWN BY 12 */
+        top: 123vw; /* MOVED DOWN BY 11 */
     }
 
     .footer {
-        top: 139vw; /* MOVED DOWN BY 12 */
+        top: 142vw; /* MOVED DOWN BY 15 */
     }
 }
