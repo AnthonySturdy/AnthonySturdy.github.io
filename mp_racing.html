@@ -20,50 +20,53 @@
     <body>
         <h3 style="position: static; top: 2vw; cursor: pointer;" onClick="document.location.href='index.html#portfolio';">&lt Back</h3><br>
         <span style="position: static; top: 2vw; cursor: pointer;" onClick="document.location.href='index.html';">Anthony Sturdy</span><br>
-        <h1 style="position: static; top: 4vw;">SDL Mario Bros.</h1>
+        <h1 style="position: static; top: 4vw;">Multiplayer 2D Racing Game and Chat Application</h1>
         <hr>
         <br>
         <table>
             <td style="width: 20%">
                 <a class="lightbox" href="#img1">
-                    <img src="Images/SDL_Mario_1.png">
+                    <img src="Images/RacingMP_1.png">
                 </a>
                 <a class="lightbox" href="#img2">
-                    <img src="Images/SDL_Mario_2.png">
+                    <img src="Images/RacingMP_2.png">
                 </a>
                 <a class="lightbox" href="#img3">
-                    <img src="Images/SDL_Mario_3.png">
+                    <img src="Images/RacingMP_3.png">
                 </a>
-                <iframe src="https://player.vimeo.com/video/340096281" width="100%" frameBorder="0" allow="autoplay; fullscreen"></iframe>
+                <!-- <iframe src="https://player.vimeo.com/video/340096281" width="100%" frameBorder="0" allow="autoplay; fullscreen"></iframe> -->
             </td>
             <td>
                 <h2>Summary</h2>
-                <p>This project is a remake of Super Mario Bros. using SDL and C++, with an in-game map editor. It was made for my Game Engine Creation module at Staffordshire University (Year 1, Semester 2). For the assignment, we were tasked to remake the original 1983 Mario Bros. game, then expand upon it. To expand the game, I added side-scrolling, more enemies, a level editor, updated collision system, etc.</p>
-                <p>The biggest challenge while developing the game, was perfecting the collision system. It took a lot of testing and tweaking so the character wouldn't get stuck in the ground or go through any walls.</p>
+                <p>This project is a chat room application (Similar to Skype or Discord), made using C# and Windows. The other half of the application is a 2D multiplayer racing game, which uses the chat application to send game invites and announce the winner of the game to other users. The objective of the game is to complete three laps before your opponent does.</p>
+                <P>There were a few challenges developing the game, as it was my first time using MonoGame and the first time I had created a multiplayer application. The biggest challenge was making sure the correct client recieves the correct information for the game (such as current checkpoint), and that there are constants between the two clients (such as who is red the car and who is the blue car).</P>
                 <h2>Features</h2>
                 <ul>
-                    <li>Character Controller</li>
-                    <li>Animation System</li>
-                    <li>Saving/Loading custom level to file</li>
-                    <li>2D Axis-Aligned Bounding Box Collision</li>
-                    <li>Two types of Enemy</li>
-                    <li>Custom Text Renderer</li>
+                    <li>Race Car Controller</li>
+                    <li>Radius Collision</li>
+                    <li>Two player multiplayer game</li>
+                    <li>TCP and UDP Packet Sending and Recieving</li>
+                    <li>Client username</li>
+                    <li>Profile Picture</li>
+                    <li>Message Sending</li>
+                    <li>Direct Messaging</li>
+                    <li>Image Sending</li>
+                    <li>Client List</li>
                 </ul>
                 <h2>What I learned</h2>
-                <p>This game taught me about using unfamiliar frameworks (SDL) and taught me about general game mechanics, such as collision detection, creating a character controller that feels good to use, and saving/loading data to a file.</p>
-                <p>It also helped me improve my C++ and general programming skills.</p>
+                <p>Developing this application taught me about using C# sockets, networking and using threads for concurrency. I also learned about using MonoGame to create and render a game, and learned how to use Forms to create an application with GUI.</p>
             </td>
         </table>
         <div class="lightbox-target" id="img1">
-            <img src="Images/SDL_Mario_1.png"/>
+            <img src="Images/RacingMP_1.png"/>
             <a class="lightbox-close" href="#"></a>
          </div>
          <div class="lightbox-target" id="img2">
-            <img src="Images/SDL_Mario_2.png"/>
+            <img src="Images/RacingMP_2.png"/>
             <a class="lightbox-close" href="#"></a>
          </div>
          <div class="lightbox-target" id="img3">
-            <img src="Images/SDL_Mario_3.png"/>
+            <img src="Images/RacingMP_3.png"/>
             <a class="lightbox-close" href="#"></a>
          </div>
         <br>

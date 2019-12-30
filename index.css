@@ -265,7 +265,7 @@ td img {
 }
 
 /* Mobile Spacing changes */
-@media (pointer:none), (pointer:coarse) {
+@media only screen and (max-device-width : 640px) {
     .portfolio {
         top: 76vw;  /* MOVED DOWN BY 11 */
     }
