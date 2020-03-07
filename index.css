@@ -263,18 +263,3 @@ td img {
     height: 5.5vw;
     cursor: pointer;
 }
-
-/* Mobile Spacing changes */
-@media only screen and (max-device-width : 640px) {
-    .portfolio {
-        top: 76vw;  /* MOVED DOWN BY 11 */
-    }
-
-    .contact {
-        top: 120vw; /* MOVED DOWN BY 8 */
-    }
-
-    .footer {
-        top: 150vw; /* MOVED DOWN BY 23 */
-    }
-}
