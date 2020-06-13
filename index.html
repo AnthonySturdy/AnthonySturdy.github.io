@@ -18,36 +18,43 @@
     </head>
 
     <body>
-        <!-- Intro section -->
-        <div class = "intro-text">
-            <p style="font-size: 50%; font-weight: 400; color: rgb(215, 215, 215);">Hi.</p>
-            I'm <span>Anthony Sturdy</span>,<br>
-            <p style="font-size: 67.5%; font-weight: 400; color: rgb(215, 215, 215);">a games programming student.</p>
-        </div>
+        <div class = "intro-whole">
+            <!-- Intro section -->
+            <div class = "intro-text">
+                <p style="font-size: 50%; font-weight: 400; color: rgb(215, 215, 215);">Hi.</p>
+                I'm <span>Anthony Sturdy</span>,<br>
+                <p style="font-size: 67.5%; font-weight: 400; color: rgb(215, 215, 215);">a games programming student.</p>
+            </div>
 
-        <img class="intro-picture" src="Images/AnthonySturdy1.jpg">
-        <div class="black-square" style="width: 45vw; height: 35vw; top: 0; right: 0;"></div>
+            <img class="intro-picture" src="Images/AnthonySturdy1.jpg">
+            <div class="black-square" style="width: 45vw; height: 35vw; top: 0; right: 0;"></div>
+        </div>
 
         <!-- About section -->
         <div class="about" id="about">
             <p style="font-weight: 700; text-align: center; font-size: 1.5vw;">ABOUT</p>
             <p>Hi, my name is Anthony. I'm currently studying BSc Computer Games Programming at Staffordshire University.</p>
             <br>
-            <p>Most of my course work is developed using C++, creating games, and game engines with frameworks such as OpenGL, DirectX and SDL. I have previous experience with Unity and C# from two games I made whilst at college, and a few game jams. I also have a small amount of web development from my first year of university, and small websites such as this portfolio.</p>
-            <br>
-            <p>My current University modules consist of using applying physics to a 3D DirectX11 scene we created, using C# and F# to create task-based software and process big data, and Algorithmics such as different searching and sorting algorithms.</p>
+            <p>My coursework involves using C++ to create games, game engines and frameworks using DirectX, OpenGL and SDL. We also use C# for networked applications and multithreading, I have additional experience with C# from using Unity for previous college coursework and for occasional game jams. My small amount of web development experience comes from my first year at University, and creating websites such as this portfolio.</p>
         </div>
 
         <!-- Portfolio section -->
         <div class="portfolio" id="portfolio">
             <p style="font-weight: 700; text-align: center; font-size: 1.5vw; color: rgb(23, 23, 23);">PORTFOLIO</p><br>
-            
             <!-- Tab content -->
             <table style="width: 100%">
                 <tr>
+                    <td onClick="document.location.href='voxel-o-defence.html';"> <!-- LINK -->
+                        <img src="Images/Voxel-o-Defence_1.png"> <!-- IMAGE -->
+                        <span>2020</span><span style="float:right;">C++/DirectX11 & Unity</span><br> <!-- DATE -->
+                        <p>Voxel-o-Defence</p><br> <!-- TITLE -->
+                        <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
+                            A voxel-based tower defence game, made in 6 weeks by a team of 6.
+                        </p>
+                    </td>
                     <td onClick="document.location.href='dx11_ship.html';"> <!-- LINK -->
-                        <img src="Images/Ship_1_Thumbnail.gif"> <!-- IMAGE -->
-                        <span>2019/20</span><span style="float:right;">C++/DirectX 11</span><br> <!-- DATE -->
+                        <img src="Images/Dx11Ship_1.png"> <!-- IMAGE -->
+                        <span>2019/20</span><span style="float:right;">C++/DirectX11</span><br> <!-- DATE -->
                         <p>DirectX Ship Scene</p><br> <!-- TITLE -->
                         <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
                             A scene featuring a ship in water rendered using DirectX 11.
@@ -69,6 +76,9 @@
                             The original Doom level 'E1M1' rendered with OpenGL using FreeGLUT. 
                         </p>
                     </td>
+                    
+                </tr>
+                <tr>
                     <td onClick="document.location.href='sdl_mario_bros.html';"> <!-- LINK -->
                         <img src="Images/SDL_Mario_1.png"> <!-- IMAGE -->
                         <span>2019</span><span style="float:right;">C++/SDL</span><br> <!-- DATE -->
@@ -77,8 +87,6 @@
                             Super Mario Bros recreated in SDL with a built-in level editor.
                         </p>
                     </td>
-                </tr>
-                <tr>
                     <td onClick="document.location.href='fake_3d_dungeon.html';"> <!-- LINK -->
                         <img src="Images/Fake_3D_3.png"> <!-- IMAGE -->
                         <span>2018</span><span style="float:right;">C++/S2D</span><br> <!-- DATE -->
@@ -93,14 +101,6 @@
                         <p>Case White</p><br> <!-- TITLE -->
                         <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
                             A retro themed FPS set in WW2 with procedurally generated levels. 
-                        </p>
-                    </td>
-                    <td onClick="document.location.href='secret_of_malarith.html';"> <!-- LINK -->
-                        <img src="Images/Secret_of_Malarith_1.png"> <!-- IMAGE -->
-                        <span>2017</span><span style="float:right;">C#/Unity</span><br> <!-- DATE -->
-                        <p>Secret of Malarith</p><br> <!-- TITLE -->
-                        <p style="color: rgb(215, 215, 215); font-style: italic;"> <!-- DESCRIPTION -->
-                            A small 2D RPG made at college in a group of three.
                         </p>
                     </td>
                     <td onClick="document.location.href='reclaim_earth.html';"> <!-- LINK -->
@@ -123,7 +123,7 @@
                     <td><a href="https://twitter.com/AnthonySturdy"><img src="Images/iconfinder_24-twitter_tweet_social_4202791.png" style="width: 75%;"></a></td>
                     <td><a href="https://www.linkedin.com/in/anthonysturdy/"><img src="Images/iconfinder_56-linkedin_social_4202847.png" style="width: 75%;"></a></td>
                     <td><a href="https://github.com/AnthonySturdy"><img src="Images/iconfinder_71-github_social_4202858.png" style="width: 75%;"></a></td>
-                    <td><a href="mailto:&#097;&#110;&#116;&#104;&#111;&#110;&#121;&#115;&#116;&#117;&#114;&#100;&#121;&#049;&#050;&#051;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="Images/iconfinder_112-gmail_email_mail_social_4202766.png" style="width: 75%;"></a></td>
+                    <td><a href="mailto:anthonysturdy@gmail.com"><img src="Images/iconfinder_112-gmail_email_mail_social_4202766.png" style="width: 75%;"></a></td>
                     <td><a href="https://vimeo.com/anthonysturdy"><img src="Images/iconfinder_20-vimeo_video_social_4202795.png" style="width: 75%;"></a></td>
                     <td><a href="https://anthonysturdy.itch.io/"><img src="Images/iconfinder_71-itchio.png" style="width: 75%;"></a></td>
                 </tr>
@@ -132,11 +132,11 @@
 
 
         <div class="footer">
-            <div class="img-group" onClick="document.location.href='code-version/index.html';">
-                <p><b style="font-weight: 400; color: rgb(102, 217, 239);">&nbsp;Try_Me</b>();</p>
-                <img src="Images/code-fg.png">
-            </div>
             Copyright Anthony Sturdy © 2019
+        </div>
+        <div class = "tryMeText"><b style="font-weight: 400; color: rgb(102, 217, 239);">&nbsp;Try_Me</b>();</div>
+        <div class="img-group" onClick="document.location.href='code-version/index.html';">
+            <img src="Images/code-fg.png">
         </div>
     </body>
 </html>

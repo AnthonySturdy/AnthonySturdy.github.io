@@ -6,6 +6,8 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -18,6 +20,11 @@ body {
 }
 
 /* Top section */
+.intro-whole {
+    height: 42vw;
+    position: static;
+}
+
 .intro-text {
     font-family: 'Lato', sans-serif;
     font-size: 4vw;
@@ -52,14 +59,14 @@ body {
 
 /* About section */
 .about {
-    position: absolute;
+    position: static;
     left: 0px;
     padding-left: 15vw;
     padding-right: 15vw;
     padding-top: 4vw;
     padding-bottom: 5vw;
+    margin-bottom: 1.5vw;
     font-size: 1vw;
-    top: 43vw;
     font-family: 'Catamaran', sans-serif;
     font-weight: 400;
     text-align: justify;
@@ -84,13 +91,13 @@ body {
 
 /* Portfolio section */
 .portfolio {
-    position: absolute;
+    position: static;
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding-left: 20vw;
     padding-right: 20vw;
-    top: 67vw;
+    margin-bottom: 1.5vw;
     font-family: 'Catamaran', sans-serif;
 }
 
@@ -178,14 +185,12 @@ td img {
 
 /* Contact section */
 .contact {
-    position: absolute;
-    left: 0px;
+    position: static;
     padding-left: 15vw;
     padding-right: 15vw;
     padding-top: 4vw;
     padding-bottom: 5vw;
     font-size: 1vw;
-    top: 102vw;
     font-family: 'Catamaran', sans-serif;
     font-weight: 400;
     text-align: justify;
@@ -217,21 +222,22 @@ td img {
 /* Footer */
 .footer {
     left: 0px;
-    position: absolute;
-    top: 127vw;
-    width: 100vw;
+    position: static;
+    margin-top: 2vw;
+    bottom: 0vw;
     font-family: 'Catamaran', sans-serif;
     text-align: center;
     font-size: 0.8vw;
     color: rgb(170, 170, 170);
 }
 
-.footer .img-group {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 4vw;
-    height: 4vw;
+.img-group {
+    position: relative;
+    transform-origin: bottom left;
+    bottom: 0vw;
+    left: 0vw;
+    width: 5vw;
+    height: 5vw;
     -webkit-transition: ease 0.3s;
     -o-transition: ease 0.3s;
     transition: ease 0.3s;
@@ -240,26 +246,29 @@ td img {
     background-color: #272822;
 }
 
-.footer .img-group img {
+.img-group img {
     position: absolute;
     width: 100%;
     bottom: 0px;
     left: 0px;
+    z-index: 2;
 }
 
-.footer .img-group p {
+
+.tryMeText {
+    position: relative;
+    color: lightgray;
+    top: 4vw;
+    z-index: 1;
     font-family: 'Courier New', Courier, monospace;
     background-color: #8080802D;
-    width: 100%;
+    width: 4vw;
     font-size: 0.65vw;
-    position: absolute;
     bottom: 1vw;
     left: 0px;
     text-align: left;
 }
 
-.footer .img-group:hover {
-    width: 5.5vw;
-    height: 5.5vw;
+.img-group:hover {
     cursor: pointer;
 }

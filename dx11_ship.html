@@ -38,10 +38,11 @@
             </td>
             <td>
                 <h2>Summary</h2>
-                <p>This project is a 3D Scene featuring a ship, water, land and rocks rendered using DirectX 11 and C++. This was my first experience using a programmable pipeline to render 3D objects, so I had to learn about using Vertex and Pixel shaders to achieve desired effects such as the water.</p>
-                <p>The application was a submission for my Year 2, Semester 1 'Further Games and Graphical Concepts' module. It is currently not finished and still a WIP, as next semester the module will focus on adding physics to the level, currently any physics effects such as buoyancy are visual effects using Shaders.</p>
+                <p>This project is a 3D Scene featuring a ship, water, land and rocks rendered using DirectX 11 and C++. This was my first experience using a programmable pipeline to render 3D objects, so I learned about using Vertex and Pixel shaders to achieve desired effects such as the water.</p>
+                <p>The application was developed over Semester 1 and 2 for my 'Further Game and Graphical System Development' module in my second year at university. The first semester was entirely focussed on rendering and loading assets, and the second semester was entirely focussed on implementing physics to the scene we had created in semester 1.</p>
                 <p></p>
                 <h2>Features</h2>
+                <b>Semester 1</b>
                 <ul>
                     <li>Hierarchical Scene Graph / Loading Scene from JSON file</li>
                     <li>Water Shader</li>
@@ -54,8 +55,18 @@
                     <li>Skybox</li>
                     <li>Fog</li>
                 </ul>
+                <b>Semester 2</b>
+                <ul>
+                    <li>Velocity & Acceleration</li>
+                    <li>Gravity</li>
+                    <li>Friction</li>
+                    <li>Angular Velocity & Acceleration using Quaternions, Inertia and Torque (Rigidbody)</li>
+                    <li>Narrow Phase Collision Detection (AABB vs AABB, AABB vs Sphere, Sphere vs Sphere)</li>
+                    <li>Particle System</li>
+                </ul>
                 <h2>What I learned</h2>
                 <p>The development of this application introduced me to using a programmable pipeline for 3D rendering (had previously only used Fixed Function). It was my first experience using DirectX, which was useful as I had only used OpenGL previously. I had to learn HLSL for writing shaders, which also taught me about how lighting is applied to objects. Finally, this improved my C++ and general programming skills, as I had to refactor code throughout the development to keep the code clean and maintainable.</p>
+                <p>Developing the project through the second semester taught me about using 3D maths to simulate physics in a game. It also taught me about collision detection, and object pooling when creating the particle system.</p>
             </td>
         </table>
         <div class="lightbox-target" id="img1">
