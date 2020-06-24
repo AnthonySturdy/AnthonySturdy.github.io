@@ -1,0 +1,86 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Anthony Sturdy</title>
+        <meta name="description" content="Anthony Sturdy is a Games Programming student from the UK.">
+        <meta name="keywords" content="Anthony Sturdy, Programmer, Game Developer, UK, England, Staffordshire University, Games">
+        <link rel="canonical" href="http://anthonysturdy.co.uk/sdl_mario_bros.html"> <!-- CHANGE THIS LINK HERE -->
+        <link href="portfolio.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150268245-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-150268245-1');
+        </script>
+    </head>
+
+    <body>
+        <h3 style="position: static; top: 2vw; cursor: pointer;" onClick="document.location.href='index.html#portfolio';">&lt Back</h3><br>
+        <span style="position: static; top: 2vw; cursor: pointer;" onClick="document.location.href='index.html';">Anthony Sturdy</span><br>
+        <h1 style="position: static; top: 4vw;">Voxel-o-Defence</h1>
+        <hr>
+        <br>
+        <table>
+            <td style="width: 20%">
+                <a class="lightbox" href="#img1">
+                    <img src="Images/Voxel-o-Defence_1.png">
+                </a>
+                <a class="lightbox" href="#img2">
+                    <img src="Images/Voxel-o-Defence_2.png">
+                </a>
+                <a class="lightbox" href="#img3">
+                    <img src="Images/Voxel-o-Defence_3.png">
+                </a>
+                <iframe width="100%" src="https://www.youtube.com/embed/CRTuE76spfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <td>
+                <h2>Summary</h2>
+                <p>Voxel-o-Defence was developed for the third semester of my 'Technical Games Production' module, where we were tasked with creating a game within 6 weeks in a group of 6.</p>
+                <p>The game is a voxel-based tower defence game, where you have to place turrets and walls to stop incoming enemies. The gameplay is currently very simple due to the time constraint, but we were able to implement the basic features the game would have such as World Generation, AI, Camera Control, UI, etc.</p>
+                <p>I implemented anything related to the voxel terrain, a full list of features I implemented can be seen below. The voxel terrain system was originally prototyped in Unity while other team members set up DirectX11 boilerplate and camera controls, which allowed me to get the systems working before then porting from C# to C++ in the DirectX application.</p>
+                <p>I also used the Unity implementation of the voxel system to create a Voxel Modelling Tool for the team to use, which allowed us to create voxel models such as walls which can be placed into the scene.</p>
+                <h2>Features</h2>
+                <i>These are the features implemented by me, all features by other team members can be found <a href="https://trello.com/b/NZ10tshe/voxel-game-tasks" target="_blank">here.</a></i>
+                <ul>
+                    <li>Voxel Modelling Tool</li>
+                    <li>Voxel Terrain Generation</li>
+                    <li>Greedy Meshing</li>
+                    <li>Texturing Greedy Mesh using Texture Atlas</li>
+                    <li>Screen to World Raycasting</li>
+                    <li>Placing Voxel Models at Mouse Position</li>
+                    <li>Model Selection / Build Mode GUI</li>
+                </ul>
+                <h2>Team</h2>
+                <ul>
+                    <li>Anthony Sturdy (Me)</li>
+                    <li><a href="https://sebastianploch.me/" target="_blank">Sebastian Ploch</a></li>
+                    <li><a href="https://joeimplode.github.io/" target="_blank">Joe Pickering</a></li>
+                    <li><a href="https://davidtaylor6130.github.io/" target="_blank">David Taylor</a></li>
+                    <li><a href="https://tom-silver.github.io/" target="_blank">Tom Silver</a></li>
+                    <li><a href="https://krystalhallett.wordpress.com/" target="_blank">Krystal Hallett</a></li>
+                </ul>
+                <h2>What I learned</h2>
+                <p>Working with 5 other people taught me a lot about working in a team and how important project management is. This was the biggest team I had worked with, and without constant communication, team meetings and updating our Trello board, we wouldn't have made nearly as much progress. We did encounter a few problems where people were waiting for other features to be finished before they could finish their own features, so in the future I think planning ahead and knowing which features to complete first in order to counter that would be useful.</p>
+                <p>With a larger team relying on my code, it also forced me to think about and plan the structure and readability of the code, which I hadn't had to before. This lead to me writing much more manageable and extensible code than I previously have in solo projects.</p>
+            </td>
+        </table>
+        <div class="lightbox-target" id="img1">
+            <img src="Images/Voxel-o-Defence_1.png"/>
+            <a class="lightbox-close" href="#"></a>
+         </div>
+         <div class="lightbox-target" id="img2">
+            <img src="Images/Voxel-o-Defence_2.png"/>
+            <a class="lightbox-close" href="#"></a>
+         </div>
+         <div class="lightbox-target" id="img3">
+            <img src="Images/Voxel-o-Defence_3.png"/>
+            <a class="lightbox-close" href="#"></a>
+         </div>
+        <br>
+        <hr>
+        <div class="footer">Copyright Anthony Sturdy © 2019</div>
+    </body>
+</html>
