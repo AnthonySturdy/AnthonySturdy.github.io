@@ -47,7 +47,7 @@ body {
     top: 3vw;
     left: 40%;
     z-index: -1;
-    width: 47%;
+    width: 47vw;
 }
 
 .black-square {
@@ -183,6 +183,10 @@ td img {
     padding: 0.1vw;
 }
 
+a {
+    color: rgb(120, 125, 100);
+}
+
 /* Contact section */
 .contact {
     position: static;
@@ -221,54 +225,11 @@ td img {
 
 /* Footer */
 .footer {
-    left: 0px;
     position: static;
     margin-top: 2vw;
-    bottom: 0vw;
+    margin-bottom: 1vw;
     font-family: 'Catamaran', sans-serif;
     text-align: center;
     font-size: 0.8vw;
     color: rgb(170, 170, 170);
-}
-
-.img-group {
-    position: relative;
-    transform-origin: bottom left;
-    bottom: 0vw;
-    left: 0vw;
-    width: 5vw;
-    height: 5vw;
-    -webkit-transition: ease 0.3s;
-    -o-transition: ease 0.3s;
-    transition: ease 0.3s;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background-color: #272822;
-}
-
-.img-group img {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    left: 0px;
-    z-index: 2;
-}
-
-
-.tryMeText {
-    position: relative;
-    color: lightgray;
-    top: 4vw;
-    z-index: 1;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #8080802D;
-    width: 4vw;
-    font-size: 0.65vw;
-    bottom: 1vw;
-    left: 0px;
-    text-align: left;
-}
-
-.img-group:hover {
-    cursor: pointer;
 }
