@@ -16,7 +16,7 @@ p {
 
 body { 
     color: rgb(10, 10, 10);
-    background-color: rgb(255, 255, 245);
+    background-color: rgb(240, 240, 240);
 }
 
 /* Top section */
@@ -27,11 +27,11 @@ body {
 
 .intro-text {
     font-family: 'Lato', sans-serif;
-    font-size: 4vw;
+    font-size: 6vw;
     font-weight: 900;
     position: absolute;
-    left: 9vw;
-    top: 16vw;
+    left: 10vw;
+    top: 13vw;
     padding: 1vw;
     color: rgb(255, 255, 245);
     background-color: rgb(23, 23, 23);
@@ -160,6 +160,7 @@ td {
     -webkit-transition: ease-out 0.2s;
     -o-transition: ease-out 0.2s;
     transition: ease-out 0.2s;
+    position: relative;
 }
 
 .portfolio td {
@@ -168,6 +169,17 @@ td {
 
 .portfolio td:hover {
     background-color: rgb(19, 20, 17);
+}
+
+/*Remove above image to reveal gif*/
+td .still-image {
+    z-index: 1;
+}
+td:hover .still-image {
+    opacity: 0;
+    -webkit-transition: ease-out 0.15s;
+    -o-transition: ease-out 0.15s;
+    transition: ease-out 0.15s;
 }
 
 td p {
@@ -179,8 +191,9 @@ td span {
 }
 
 td img {
-    width: 100%;
+    width: 94%;
     padding: 0.1vw;
+    position: absolute;
 }
 
 a {
