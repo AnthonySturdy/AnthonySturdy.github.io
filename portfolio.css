@@ -71,6 +71,12 @@ iframe {
     min-height: calc(14vw * 0.56);
 }
 
+.twitter-tweet-rendered iframe {
+    width: initial !important;
+    max-height: initial !important;
+    min-height: initial !important;
+}
+
 td img {
     width: 14vw;
     padding-bottom: 1vw;
