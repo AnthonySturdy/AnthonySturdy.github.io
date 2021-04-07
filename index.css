@@ -33,7 +33,7 @@ body {
     left: 10vw;
     top: 13vw;
     padding: 1vw;
-    color: rgb(255, 255, 245);
+    color: rgb(240, 240, 240);
     background-color: rgb(23, 23, 23);
     display: inline-block;
 }
@@ -174,6 +174,9 @@ td {
 /*Remove above image to reveal gif*/
 td .still-image {
     z-index: 1;
+    -webkit-transition: ease-out 0.15s;
+    -o-transition: ease-out 0.15s;
+    transition: ease-out 0.15s;
 }
 td:hover .still-image {
     opacity: 0;

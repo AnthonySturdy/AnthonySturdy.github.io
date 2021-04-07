@@ -15,34 +15,38 @@
 
             gtag('config', 'UA-150268245-1');
         </script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <body>
         <div class = "intro-whole">
             <!-- Intro section -->
-            <div class = "intro-text">
+            <div class = "intro-text" data-aos="fade-right" data-aos-easing="ease-in-out">
                 <p style="font-size: 50%; font-weight: 400; color: rgb(215, 215, 215);">Hi.</p>
                 I'm <span>Anthony</span>,<br>
                 <p style="font-size: 43%; font-weight: 400; color: rgb(215, 215, 215);">a games programming student.</p>
             </div>
 
-            <img class="intro-picture" src="Images/AnthonySturdy1.jpg">
+            <img class="intro-picture" src="Images/AnthonySturdy1.jpg" data-aos="fade-left" data-aos-easing="ease-out-quart">
             <div class="black-square" style="width: 47vw; height: 37.19vw; top: 0; right: 0;"></div>
         </div>
 
         <!-- About section -->
         <div class="about" id="about">
             <p style="font-weight: 700; text-align: center; font-size: 1.5vw;">ABOUT</p>
-            <p>Hi, I'm Anthony. I'm currently working at Unity Technologies as a Sustained Engineer Intern, as part of the sandwich year of my university course.</p>
-            <br>
-            <p>The course I'm studying is BSc Computer Games Programming at Staffordshire University, my coursework primarily involves using C++ to create games, game engines and frameworks using DirectX, OpenGL and SDL. We also use C# for networked applications and multithreading, I have additional experience with C# from using Unity for previous college coursework and for occasional game jams. My limited web development experience comes from my first year at University, and creating websites such as this portfolio.</p>
+            <div class="about-content" data-aos="fade-up">
+                <p>Hi, I'm Anthony. I'm currently working at Unity Technologies as a Sustained Engineer Intern, as part of the sandwich year of my university course.</p>
+                <br>
+                <p>The course I'm studying is BSc Computer Games Programming at Staffordshire University, my coursework primarily involves using C++ to create games, game engines and frameworks using DirectX, OpenGL and SDL. We also use C# for networked applications and multithreading, I have additional experience with C# from using Unity for previous college coursework and for occasional game jams. My limited web development experience comes from my first year at University, and creating websites such as this portfolio.</p>
+            </div>
         </div>
 
         <!-- Portfolio section -->
         <div class="portfolio" id="portfolio">
             <p style="font-weight: 700; text-align: center; font-size: 1.5vw; color: rgb(23, 23, 23);">PORTFOLIO</p><br>
+            <p style="text-align: center; color: rgb(170, 170, 170);" data-aos="fade-down" data-aos-delay="3000" data-aos-easing="ease-in-out"><i>Click for more information</i></p>
             <!-- Tab content -->
-            <table style="width: 100%">
+            <table style="width: 100%" data-aos="fade-up">
                 <tr>
                     <td onClick="document.location.href='voxel-o-defence.html';"> <!-- LINK -->
                         <img src="Images/Voxel-o-Defence_3.png" class="still-image"> <!-- IMAGE -->
@@ -144,7 +148,7 @@
         <div class="contact" id="contact">
             <p style="font-weight: 700; text-align: center; font-size: 1.5vw;">CONTACT</p>
             <br>
-            <table>
+            <table data-aos="fade-down">
                 <tr>
                     <td><a href="https://twitter.com/AnthonySturdy" target="_blank">
                         <img src="Images/icon_twitter.png" style="width: 75%;">
@@ -172,5 +176,14 @@
         <div class="footer">
             Copyright Anthony Sturdy © 2021
         </div>
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+                duration: 500,
+            });
+        </script>
     </body>
 </html>
