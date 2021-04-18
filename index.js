@@ -6,3 +6,4 @@ for(let i = 0; i < allImages.length; i++)
         allImages[i].src = allImages[i].id;
     }
 }
+console.log("Gifs Loaded")
