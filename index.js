@@ -1,5 +1,4 @@
 window.addEventListener('load', function () {
-    console.log("Page Loaded")
     var allImages = document.getElementsByTagName("img");
     for(let i = 0; i < allImages.length; i++)
     {
@@ -8,5 +7,4 @@ window.addEventListener('load', function () {
             allImages[i].src = allImages[i].id;
         }
     }
-    console.log("Gifs Loaded");
 })
