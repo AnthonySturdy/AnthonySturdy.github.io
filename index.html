@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- TODO: Include meta tags from previous version -->
+        <meta charset="utf-8">
+
+        <title>Anthony Sturdy</title>
+        <meta name="description" content="Anthony Sturdy is a Games Programming student from the UK, studying at Staffordshire University.">
+
+        <meta name="keywords" content="Anthony Sturdy, Programmer, Game Developer, UK, England, Staffordshire University, Games">
+        <link rel="canonical" href="https://anthonysturdy.co.uk/">
+        
+        <meta property="og:title" content="Anthony Sturdy's Portfolio">
+        <meta property="og:description" content="Anthony Sturdy is a Programmer from the UK. This website features Anthony's portfolio, previous work, and contact information.">
+        <meta property="og:image" content="https://anthonysturdy.co.uk/images/personal/anthony-sturdy.jpg">
+        <meta property="og:url" content="https://anthonysturdy.co.uk/">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image:alt" content="Anthony Sturdy in London">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="index.css" rel="stylesheet" type="text/css">
+        <script async src="index.js"></script>
     </head>
 
     <body>
+        <!-- HEADER -->
         <div class="row header">
             <div class="col-5">
                 <ul>
-                    <li><a href="">> About</a></li>
-                    <li><a href="">>> Portfolio</a></li>
-                    <li><a href="">>>> Contact</a></li>
+                    <li><a href="#about"><span>></span>about</a></li>
+                    <li><a href="#portfolio"><span>>></span>portfolio</a></li>
+                    <li><a href="#contact"><span>>>></span>contact</a></li>
                 </ul>
             </div>
             
             <div class="col-7">
                 <button onclick="window.open('Anthony-Sturdy-CV.pdf', '_blank').focus();" formtarget="_blank">CV</button>
-                <a target="_blank" href="https://twitter.com/AnthonySturdy">            <img src="images/social-icons/twitter.svg"> </a>
-                <a target="_blank" href="https://github.com/AnthonySturdy">             <img src="images/social-icons/github.svg">  </a>
-                <a target="_blank" href="https://www.linkedin.com/in/anthonysturdy/">   <img src="images/social-icons/linkedin.svg"></a>
-                <a target="_blank" href="mailto:anthonysturdy@gmail.com">               <img src="images/social-icons/email.svg">   </a>
+                <a target="_blank" href="https://twitter.com/AnthonySturdy">            <img src="images/icons/twitter.svg" alt="Twitter logo"> </a>
+                <a target="_blank" href="https://github.com/AnthonySturdy">             <img src="images/icons/github.svg" alt="GitHub logo">  </a>
+                <a target="_blank" href="https://www.linkedin.com/in/anthonysturdy/">   <img src="images/icons/linkedin.svg" alt="LinkedIn logo"></a>
+                <a target="_blank" href="mailto:anthonysturdy@gmail.com">               <img src="images/icons/email.svg" alt="Envelope email icon">   </a>
             </div>
         </div>
 
+        <!-- LANDING INTRODUCTION -->
         <div class="row intro" data-tilt data-tilt-max="1" data-tilt-speed="0.1" data-tilt-reverse="false" data-tilt-reset="false" data-tilt-full-page-listening>
             <div class="col-2"></div>
             <div class="col-5 content">
@@ -35,10 +51,152 @@
                 <h2>a games programming student.</h2>
             </div>
             <div class="col-5">
-                <img src="images/personal/anthony-sturdy.jpg">
+                <img src="images/personal/anthony-sturdy.jpg" alt="Anthony in London">
             </div>
-            
         </div>
+
+        <!-- ABOUT -->
+        <div class="row about" id="about">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h2><span>></span> about</h2>
+
+                <p>Hi, my name is Anthony. I'm a student at <a href="https://www.staffs.ac.uk/">Staffordshire University</a> studying BSc Computer Games Programming, and currently a Sustained Engineer Intern at <a href="https://unity.com/">Unity Technologies</a> as part of the placement year on my course.</p>
+                <p>My coursework primarly involves using C++ to create games and game engines with DirectX, OpenGL and SDL. Other modules have covered using C# for multithreaded/task-based applications and networked applications.</p>
+                <p>At <a href="https://unity.com/">Unity</a>, I have worked on a variety of different projects and tasks. However, the majority of my time has been spent fixing engine bugs (C++), writing automated editor tests (C#) and improving various <a href="https://scan.coverity.com/">Coverity Static Analysis</a> tooling by creating a <a href="https://datastudio.google.com/overview">Google Data Studio</a> dashboard (Python, BigQuery) and implementing support for modelled functions, in order to reduce false positives (C++, C#).</p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <!-- PORTFOLIO -->
+        <div class="row portfolio" id="portfolio">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h2><span>>></span> portfolio</h2>
+
+                <!-- TEMPLATE
+                <button class="accordion">
+                    <div class="col-3">
+                        TITLE
+                        <img src="images/projects/IMAGE">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>YEAR</span> TECHNOLOGIES</div>
+                        <p>SUMMARY INFO</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>MORE INFO HEADER</h2>
+                    <p>MORE INFO</p>
+                </div>
+            -->
+
+                <!-- Voxel-o-Defence -->
+                <button class="accordion">
+                    <div class="col-3">
+                        Voxel-o-Defence
+                        <img src="images/projects/Voxel-o-Defence_3.png" alt="Screenshot of procedurally generated island in Voxel-o-Defence">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2020</span> C++ / DirectX11 / Unity</div>
+                        <p>Voxel-o-Defence is a tower-defence game, developed for the third semester of my 'Technical Games Production' module, where we were tasked with creating a game within 6 weeks in a group of 6.</p>
+                        <p>I implemented mechanics related to the voxel terrain, a full list of features I implemented can be seen below. The voxel terrain system was originally prototyped in Unity while other team members set up DirectX11 boilerplate and camera controls, which allowed me to get the systems working before then porting from C# to C++ in the DirectX application.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>Features</h2>
+                    <p><i>These are the features implemented by me, all features by other team members can be found by <a href="https://trello.com/b/NZ10tshe/voxel-game-tasks" target="_blank">clicking here.</a></i></p>
+                    <ul>
+                        <li>Voxel Modelling Tool</li>
+                        <li>Voxel Terrain Generation</li>
+                        <li>Greedy Meshing</li>
+                        <li>Texturing Greedy Mesh using Texture Atlas</li>
+                        <li>Screen to World Raycasting</li>
+                        <li>Placing Voxel Models at Mouse Position</li>
+                        <li>Model Selection / Build Mode GUI</li>
+                    </ul>
+                    <h2>Team</h2>
+                    <ul>
+                        <li>Anthony Sturdy (Me)</li>
+                        <li><a href="https://sebastianploch.me/" target="_blank">Sebastian Ploch</a></li>
+                        <li><a href="https://joeimplode.github.io/" target="_blank">Joe Pickering</a></li>
+                        <li><a href="https://davidtaylor6130.github.io/" target="_blank">David Taylor</a></li>
+                        <li><a href="https://tom-silver.github.io/" target="_blank">Tom Silver</a></li>
+                        <li><a href="https://krystalhallett.wordpress.com/" target="_blank">Krystal Hallett</a></li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>Working with 5 other people taught me a lot about working in a team and how important project management is. This was the biggest team I had worked with, and without constant communication, team meetings and updating our Trello board, we wouldn't have made nearly as much progress. We did encounter a few problems where people were waiting for other features to be finished before they could finish their own features, so in the future I think planning ahead and knowing which features to complete first in order to counter that would be useful.</p>
+                    <p>With a larger team relying on my code, it also forced me to think about and plan the structure and readability of the code, which I hadn't had to before. This lead to me writing much more manageable and extensible code than I previously have in solo projects.</p>
+                </div>
+
+                <!-- DX11 Ship -->
+                <button class="accordion">
+                    <div class="col-3">
+                        DirectX11 Ship Scene
+                        <img src="images/projects/Dx11Ship_1.png" alt="A 3D render of a ship in a body of water surrounded by rocks">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2019/20</span> C++ / DirectX11</div>
+                        <p>This project is a 3D Scene featuring a ship, water, land and rocks rendered using DirectX 11 and C++. This was my first experience using a programmable pipeline to render 3D objects, so I learned about using Vertex and Pixel shaders to achieve desired effects such as the water.</p>
+                        <p>The application was developed over Semester 1 and 2 for my 'Further Game and Graphical Systems Development' module in my second year at university. The first semester was entirely focussed on rendering and loading assets, and the second semester task was to implement physics to the scene we had created in semester 1.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>Features</h2>
+                    <b>Semester 1</b>
+                    <ul>
+                        <li>Hierarchical Scene Graph / Loading Scene from JSON file</li>
+                        <li>Water Shader</li>
+                        <li>Diffuse, Ambient and Specular Lighting</li>
+                        <li>Specular and Normal mapping</li>
+                        <li>Texturing</li>
+                        <li>Ship Controller</li>
+                        <li>Ship Bouyancy (shader visual effect)</li>
+                        <li>First and Third person cameras</li>
+                        <li>Skybox</li>
+                        <li>Fog</li>
+                    </ul>
+                    <b>Semester 2</b>
+                    <ul>
+                        <li>Velocity & Acceleration</li>
+                        <li>Gravity</li>
+                        <li>Friction</li>
+                        <li>Angular Velocity & Acceleration using Quaternions, Inertia and Torque (Rigidbody)</li>
+                        <li>Narrow Phase Collision Detection (AABB vs AABB, AABB vs Sphere, Sphere vs Sphere)</li>
+                        <li>Particle System</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>The development of this application introduced me to using a programmable pipeline for 3D rendering (had previously only used Fixed Function). It was my first experience using DirectX, which was useful as I had only used OpenGL previously. I learned to use HLSL for writing shaders, which also taught me about how lighting is applied to objects and how image effects such as fog are achieved. Lastly, this improved my C++ and general programming skills, and the original codebase was refactored throughout the development to keep the code clean and maintainable.</p>
+                </div>
+
+
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="row contact" id="contact">
+            <div class="col-2"></div>
+            <div class="col-4">
+                <h2><span>>>></span> contact</h2>
+                <p>I'll soon be graduating from University and looking for any open positions which may be available. If you feel that I might be a good fit for your team, get in touch! I'll get back to any emails ASAP.</p>
+                <p>Otherwise, if you'd like to contact me regarding anything else, or just to say Hello, feel free to also use the email to the right or any of the social links at the top of the page.</p>
+                <p>Cheers!</p>
+            </div>
+            <div class="col-4">
+                <button onclick="location.href='mailto:anthonysturdy@gmail.com'" type="button">Email me!</button>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="row footer">
+            <p style="text-align: center;">Copyright Anthony Sturdy © 2021</p>
+        </div>
+
 
         <script type="text/javascript" src="external/vanilla-tilt.min.js"></script>
     </body>

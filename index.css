@@ -5,14 +5,14 @@
     /* Global vars */
     --dark-blue: #16335d;
     --dark-blue-transparent: #1d355700;
-    --mid-blue: #457b9d;
+    --mid-blue: #5d9ac0;
     --light-blue: #a8dadc;
     --off-white: #f1faee;
     --orange: #e63946;
-    --orange-tint: #e6394615;
+    --orange-tint: #e639460a;
 
     --filter-dark-blue: invert(13%) sepia(28%) saturate(3844%) hue-rotate(197deg) brightness(95%) contrast(89%);
-    --filter-mid-blue: invert(47%) sepia(19%) saturate(1124%) hue-rotate(160deg) brightness(90%) contrast(89%);
+    --filter-mid-blue: invert(57%) sepia(18%) saturate(939%) hue-rotate(160deg) brightness(95%) contrast(94%);
     --filter-light-blue: invert(98%) sepia(4%) saturate(3349%) hue-rotate(147deg) brightness(95%) contrast(80%);
     --filter-off-white: invert(100%) sepia(22%) saturate(1934%) hue-rotate(304deg) brightness(110%) contrast(95%);
     --filter-orange: invert(35%) sepia(59%) saturate(4493%) hue-rotate(336deg) brightness(93%) contrast(93%);
@@ -39,7 +39,66 @@
 html {
     font-family: "Lucida Sans", sans-serif;
     background-color: var(--dark-blue);
-    overflow-x: hidden
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--light-blue);
+}
+
+span {
+    color: var(--orange);
+}
+
+h2 span {
+    font-weight: 600;
+    font-family: "Monaco", monospace;
+    transform: translateY(5em);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--light-blue);
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+p a {
+    color: inherit;
+    text-decoration: none;
+    transition-duration: 200ms;
+}
+
+p a:hover {
+    color: var(--orange);
+}
+
+hr {
+    border: 1px solid var(--mid-blue);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--dark-blue);          /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--dark-blue);    /* color of the scroll thumb */
+    border-radius: 20px;                   /* roundness of the scroll thumb */
+    border: 2px solid var(--mid-blue);   /* creates padding around scroll thumb */
+    transition-duration: 200ms;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--orange);
 }
 
 /* HEADER */
@@ -76,9 +135,9 @@ html {
 .header button {
     pointer-events: all;
     float: right;
-    background-color: var(--dark-blue);
+    background-color: var(--dark-blue-transparent);
     border: 2px solid var(--light-blue);
-    color: var(--dark-blue);
+    color: var(--light-blue);
     padding: 0px;
     margin-top: 1px;
     margin-right: 15px;
@@ -86,23 +145,15 @@ html {
     width: 40px;
     border-radius: 5px;
     font-family: "Monaco", monospace;
-    font-weight: 600;
-    font-size: 17px;
-    text-shadow: -1px 1px 0 var(--light-blue),
-				  1px 1px 0 var(--light-blue),
-				 1px -1px 0 var(--light-blue),
-				-1px -1px 0 var(--light-blue);
+    font-size: 16px;
     transition-duration: 200ms;
 }
 
 .header button:hover {
     border: 2px solid var(--orange);
-    text-shadow: -1px 1px 0 var(--orange),
-				  1px 1px 0 var(--orange),
-				 1px -1px 0 var(--orange),
-				-1px -1px 0 var(--orange);
-                margin-top: -2px;
+    margin-top: -2px;
     cursor: pointer;
+    color: var(--orange);
 }
 
 .header ul {
@@ -120,7 +171,7 @@ html {
     padding-right: 30px;
     padding-left: 30px;
     font-family: "Monaco", monospace;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--light-blue);
     transition-duration: 200ms;
 }
@@ -137,6 +188,7 @@ html {
 /* INTRO */
 .intro {
     padding-top: 100px;
+    height: 95vh;
     transform-style: preserve-3d;
     transform: perspective(1000px);
 }
@@ -178,7 +230,181 @@ html {
     28px 28px 0 0px var(--orange);
 }
 
-/* Device modifiers */
+/* ABOUT */
+.about {
+    margin-bottom: 75px;
+}
+
+.about p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    margin-bottom: 75px;
+}
+
+.portfolio .accordion {
+    font-family: 'Monaco', monospace;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: var(--dark-blue-transparent);
+    border: 2px solid var(--dark-blue-transparent);
+    color: var(--light-blue);
+    cursor: pointer;
+    padding: 5px;
+    width: calc(100% - 60px);
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.portfolio .active, .accordion:hover { /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    border-left: 2px solid var(--mid-blue);
+    border-right: 2px solid var(--mid-blue);
+    border-top: 2px solid var(--mid-blue);
+    color: var(--orange);
+}
+
+.portfolio .panel {    /* Style the accordion panel. Note: hidden by default */
+    border-left: 2px solid var(--mid-blue);
+    border-right: 2px solid var(--mid-blue);
+    border-bottom: 2px solid var(--mid-blue);
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--dark-blue-transparent);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 1em;
+    margin-top: -2px;
+}
+
+.portfolio .panel h2 {
+    font-family: 'Monaco', monospace;
+    font-weight: 600;
+    font-size: 25px;
+    padding-left: .5em;
+    padding-right: .5em;
+    color: var(--orange);
+}
+
+.portfolio .panel b {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light-blue);
+}
+
+.portfolio .panel li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--light-blue);
+}
+
+.portfolio .panel li a {
+    text-decoration: inherit;
+    color: inherit;
+    transition-duration: 200ms;
+}
+
+.portfolio .panel li a:hover {
+    color: var(--orange);
+}
+
+.accordion:after {
+    content: '+'; 
+    font-family: "Monaco", monospace;
+    font-size: 20px;
+    color: var(--mid-blue);
+    float: right;
+    margin-top: -20px;
+    margin-right: 9px;
+}
+
+.active:after {
+    content: "-"; 
+    color: var(--orange);
+}
+
+.accordion:hover::after {
+    content: '+'; 
+    font-family: "Monaco", monospace;
+    font-size: 20px;
+    color: var(--orange);
+    float: right;
+    margin-left: 5px;
+}
+
+.active:hover::after {
+    content: "-"; 
+    color: var(--orange);
+}
+
+.accordion img {
+    max-height: 200px;
+}
+
+.portfolio p {
+    font-size: 16px;
+}
+
+.portfolio .sub-info {
+    font-size: 14px;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--mid-blue);
+}
+.portfolio .sub-info span {
+    font-family: 'Monaco', monospace;
+    font-weight: 400;
+    margin-right: 3em;
+    color: var(--light-blue);
+}
+
+/* CONTACT */
+.contact {
+    margin-bottom: 75px;
+}
+
+.contact p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.contact button {
+    border: 2px solid var(--light-blue);
+    border-radius: 5px;
+    background: var(--dark-blue);
+    padding: 20px 40px 20px 40px;
+    color: var(--light-blue);
+    font-family: "Monaco", monospace;
+    font-size: 16px;
+    transition-duration: 200ms;
+    position: relative;
+    margin-top: 75px;
+    margin-left: 5vw;
+}
+
+.contact button:hover {
+    border: 2px solid var(--orange);
+    color: var(--orange);
+    background: var(--orange-tint);
+}
+
+/* FOOTER */
+.footer p {
+    color: var(--mid-blue);
+    font-family: "Monaco", monospace;
+    font-size: 12px;
+}
+
+/* DEVICE MODIFIERS */
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     .col-1 { width: 8.33%; }
@@ -204,6 +430,7 @@ html {
 
     .intro {
         padding-top: 20vh;
+        height: 90vh;
     }
 
     .intro .content {
@@ -226,5 +453,13 @@ html {
 
     .intro img {
         right: 8%;
+    }
+
+    .portfolio h2 {
+        margin-left: -15px;
+    }
+
+    .contact h2 {
+        margin-left: -30px;
     }
 }
