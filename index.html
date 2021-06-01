@@ -171,7 +171,178 @@
                     <h2>What I learned</h2>
                     <p>The development of this application introduced me to using a programmable pipeline for 3D rendering (had previously only used Fixed Function). It was my first experience using DirectX, which was useful as I had only used OpenGL previously. I learned to use HLSL for writing shaders, which also taught me about how lighting is applied to objects and how image effects such as fog are achieved. Lastly, this improved my C++ and general programming skills, and the original codebase was refactored throughout the development to keep the code clean and maintainable.</p>
                 </div>
+                
+                <!-- Multiplayer Racing -->
+                <button class="accordion">
+                    <div class="col-3">
+                        2D Multiplayer Racing Game
+                        <img src="images/projects/RacingMP_1.png">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2019</span> C# / MonoGame</div>
+                        <p>This project is a chat room application (Similar to Skype or Discord), made using C# and WinForms. The other half of the application is a 2D multiplayer racing game, which uses the chat application to send game invites and announce the winner of the game to other users. The objective of the game is to complete three laps before your opponent does.</p>
+                        <p>There were a few challenges developing the game, as it was my first time using MonoGame and the first time I had created a multiplayer application. The biggest challenge was making sure the correct client recieves the correct information for the game (such as current checkpoint), and that there is persistance between the two clients (such as who is red the car and who is the blue car).</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Race Car Controller</li>
+                        <li>Radius Collision</li>
+                        <li>Two player multiplayer game</li>
+                        <li>TCP and UDP Packet Sending and Recieving</li>
+                        <li>Client username</li>
+                        <li>Profile Picture</li>
+                        <li>Message Sending</li>
+                        <li>Direct Messaging</li>
+                        <li>Image Sending</li>
+                        <li>Client List</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>Developing this application taught me about using C# sockets, networking and using threads for concurrency. I also learned about using MonoGame to create and render a game, and learned how to use Forms to create an application with GUI.</p>
+                </div>
 
+                <!-- E1M1 -->
+                <button class="accordion">
+                    <div class="col-3">
+                        E1M1 FreeGLUT
+                        <img src="images/projects/E1M1_1.png">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2019</span> C++ / OpenGL (FreeGLUT)</div>
+                        <p>This project is an E1M1 3D model being rendered in OpenGL using FreeGLUT. It was made for my 'Fundamentals of Game and Graphical Systems Development' module submission at University (Year 1, Semester 2). For the assignment, we were tasked to render multiple, textured 3D models using FreeGLUT and C++. I was able to find a 3D model of E1M1 online, which I then modified and UV unwrapped.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <p>The biggest challenge for this project was the character controller, and how to handle collisions. I went with a navigation mesh system for collisions, which also allowed me to set the players height when traversing the map. There is another (invisible) mesh of only the map floor, which covers the entire walkable area. Which allows me to check whether the player is above walkable ground (if not, it's considered a collision), and lets me set the height of the player as they walk up/down stairs, drop off of ledges, etc.</p>
+                    <h2>Features</h2>
+                    <ul>
+                        <li>OBJ Loading</li>
+                        <li>BMP Loading</li>
+                        <li>Texturing</li>
+                        <li>Simple lighting</li>
+                        <li>Player Controller</li>
+                        <li>Navigation Mesh and Radius collision</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>This project gave me and introduction to 3D rendering. It has taught me the basics of rendering using OpenGL, and what I have learned from this will help me in future projects to be able to make more advanced rendering software.</p>
+                    <p>It helped me improve my problem solving skills. I also gained more experience using C++, and using good programming practices.</p>
+                </div>
+
+                <!-- SDL Mario Bros. -->
+                <button class="accordion">
+                    <div class="col-3">
+                        SDL Mario Bros.
+                        <img src="images/projects/SDL_Mario_1.png">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2019</span> C++ / SDL</div>
+                        <p>This project is a remake of Super Mario Bros. using SDL and C++, with an in-game level editor. It was made for my Game Engine Creation module at Staffordshire University (Year 1, Semester 2). For the assignment, we were tasked to remake the original 1983 Mario Bros. game, then expand upon it. To expand the game, I added side-scrolling, more enemies, a level editor, updated collision system, etc.</p>
+                        <p>The biggest challenge while developing the game, was perfecting the collision system. It took a lot of testing and tweaking so the character wouldn't get stuck in the ground or go through any walls.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Character Controller</li>
+                        <li>Animation System</li>
+                        <li>Saving/Loading custom level to file</li>
+                        <li>2D Axis-Aligned Bounding Box Collision</li>
+                        <li>Two types of Enemy</li>
+                        <li>Custom Text Renderer</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>This game taught me about using unfamiliar frameworks (SDL) and taught me about general game mechanics, such as collision detection, creating a character controller that feels good to use, and saving/loading data to a file. Creating the level editor allowed me to gain experience in tools development.</p>
+                    <p>It also helped me improve my C++ and general programming skills.</p>
+                </div>
+
+                <!-- Fake 3D Dungeon -->
+                <button class="accordion">
+                    <div class="col-3">
+                        'Fake' 3D Dungeon
+                        <img src="images/projects/Fake_3D_1.png">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2018</span> C++ / S2D</div>
+                        <p>This project is a simple wave-based dungeon game, the game has a 3D effect, but is rendered in a 2D framework called S2D (University's in-house framework). It was made for the my Fundamentals of Game and Graphical Systems Development module (Year 1, Semester 1), for the assignment we were tasked with creating a 2D game using the framework provided.</p>
+                        <p>The 3D effect is achieved by layering multiple sprites per model, each sprite is a horizontal slice of the model, which is then positioned and rotated correctly to appear 3D.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <p>The gameplay is an infinite wave-base game, where slimes spawn randomly, the objective is to survive as long as possible and reach the highest score, which is then uploaded to an online leaderboard to compare with others.</p>
+                    <h2>Features</h2>
+                    <ul>
+                        <li>3D Effect in 2D Framework</li>
+                        <li>Character Controller</li>
+                        <li>Animations</li>
+                        <li>Online Leaderboard (hosted using <a href="http://dreamlo.com/">Dreamlo</a>)</li>
+                        <li>Enemy AI</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>Developing this game taught me about using unfamiliar frameworks (SDL, libcurl), 2D mathematics and other mechanics such as collision detection and game states. I also gained experience using C++ through this project, and learned to keep code clean.</p>
+                </div>
+
+                <!-- Case White -->
+                <button class="accordion">
+                    <div class="col-3">
+                        Case White
+                        <img src="images/projects/Case_White_2.png">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2018</span> C# / Unity</div>
+                        <p>Case White is an FPS game set in WW2, with procedurally generated levels, random weapon generation and a retro aesthetic. The game was made for my UAL Level 3 Extended Game Design final major project submission at City of Wolverhampton College. </p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <p>For the assignment, we were given freedom to create a 3D game using an engine of our choice. I decided to work by myself on this game, so I chose Unity, as I am most familiar with Unity over other similar engines such as UE4 or Godot. I was also required to keep a reflective journal throughout the development of the project, which can be seen <a href="https://spark.adobe.com/page/9uppQnKx0YJNk/">here</a>. The reflective journal documents each step of the game's development and all of the research I did for the game.</p>
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Character Controller</li>
+                        <li>Multiple Enemy AI's</li>
+                        <li>Inventory System</li>
+                        <li>Procedural Level Generation</li>
+                        <li>Multiple Online Leaderboards</li>
+                        <li>Save/Loading System</li>
+                        <li>Skills System</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>This was the first game I had worked on fully by myself (apart from game-jam games, and smaller projects), so I learned a lot about project management, time management, and various skills which go into making a game (such as creating the art and sound effects). I tried to push myself technically with the project, I had never looked into procedural generation before this, nor had I looked into pathfinding. Attempting both of these were big challenges for me, and feel as though attempting them taught me a lot.</p>
+                    <h2>Links</h2>
+                    <p><a href="https://anthonysturdy.itch.io/case-white">Download Page (itch.io)</a></p>
+                    <p><a href="https://spark.adobe.com/page/9uppQnKx0YJNk/">Development Log (Reflective Journal)</a></p>
+                </div>
+
+                <!-- Reclaim Earth-->
+                <button class="accordion">
+                    <div class="col-3">
+                        Reclaim Earth
+                        <img src="images/projects/Reclaim_Earth_3.png">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2016</span> C# / Unity</div>
+                        <p>Reclaim Earth is a pixelated sci-fi FPS, originally made for LOWREZJAM and expanded upon later. I worked with two other developers from the US on this project, which was my first experience working in a group. I did the programming and Game Design, Chase Bethea did all sound effects and Music for the game, James Brunner did the artwork and modelling for the game.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Shooting Mechanics</li>
+                        <li>Inventory System</li>
+                        <li>Multiple enemy types</li>
+                        <li>Boss battle</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>This game gave me experience working in a group, and specifically experience working in a remote group. It also gave me experience working a professional composer and artist.</p>
+                    <p>I gained valuable project management experience throughout the development of Reclaim Earth, I brought together all of the individual assets into the final project and implemented them with the mechanics. </p>
+                    <h2>Links</h2>
+                    <p><a href="https://ansitygames.itch.io/reclaim-earth">Download link (itch.io)</a></p>
+                </div>
 
             </div>
             <div class="col-2"></div>

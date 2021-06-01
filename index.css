@@ -188,7 +188,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* INTRO */
 .intro {
     padding-top: 100px;
-    height: 95vh;
+    height: 100vh;
     transform-style: preserve-3d;
     transform: perspective(1000px);
 }
@@ -388,7 +388,9 @@ body::-webkit-scrollbar-thumb:hover {
     transition-duration: 200ms;
     position: relative;
     margin-top: 75px;
-    margin-left: 5vw;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .contact button:hover {
@@ -461,5 +463,12 @@ body::-webkit-scrollbar-thumb:hover {
 
     .contact h2 {
         margin-left: -30px;
+    }
+}
+
+@media only screen and (min-device-aspect-ratio: 20/9) {
+    .intro img {
+        max-width: 25%;
+        min-width: 400px;
     }
 }
