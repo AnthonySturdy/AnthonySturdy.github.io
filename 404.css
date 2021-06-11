@@ -1,0 +1,43 @@
+/* CSS Reset */ *,::after,::before{box-sizing:border-box}blockquote,body,dd,dl,figure,h1,h2,h3,h4,p{margin:0}ol[role=list],ul[role=list]{list-style:none}html:focus-within{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}a:not([class]){text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}button,input,select,textarea{font:inherit}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+:root {
+    /* Global vars */
+    --dark-blue: #16335d;
+    --dark-blue-transparent: #1d355700;
+    --mid-blue: #5d9ac0;
+    --light-blue: #a8dadc;
+    --off-white: #f1faee;
+    --orange: #e63946;
+    --orange-tint: #e639460a;
+
+    --filter-dark-blue: invert(13%) sepia(28%) saturate(3844%) hue-rotate(197deg) brightness(95%) contrast(89%);
+    --filter-mid-blue: invert(57%) sepia(18%) saturate(939%) hue-rotate(160deg) brightness(95%) contrast(94%);
+    --filter-light-blue: invert(98%) sepia(4%) saturate(3349%) hue-rotate(147deg) brightness(95%) contrast(80%);
+    --filter-off-white: invert(100%) sepia(22%) saturate(1934%) hue-rotate(304deg) brightness(110%) contrast(95%);
+    --filter-orange: invert(35%) sepia(59%) saturate(4493%) hue-rotate(336deg) brightness(93%) contrast(93%);
+}
+
+body {
+    background-color: var(--dark-blue);
+    width: 100%;
+}
+
+h1 {
+    padding-top: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1em;
+    color: var(--light-blue);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1em;
+    color: var(--mid-blue);
+    text-align: center;
+}
