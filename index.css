@@ -1,9 +1,22 @@
 /* CSS Reset */ *,::after,::before{box-sizing:border-box}blockquote,body,dd,dl,figure,h1,h2,h3,h4,p{margin:0}ol[role=list],ul[role=list]{list-style:none}html:focus-within{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}a:not([class]){text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}button,input,select,textarea{font:inherit}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+@font-face {
+    font-family: "Nunito";
+    src: url("Nunito-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Courier Prime";
+    src: url("CourierPrime-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Courier Prime Bold";
+    src: url("CourierPrime-Bold.ttf") format("truetype");
+}
+
 
 :root {
     /* Global vars */
-    --dark-blue: #16335d;
+    --dark-blue: #0c203b;
     --dark-blue-transparent: #1d355700;
     --mid-blue: #5d9ac0;
     --light-blue: #a8dadc;
@@ -56,12 +69,12 @@ span {
 
 h2 span {
     font-weight: 600;
-    font-family: "Monaco", monospace;
+    font-family: "Courier Prime", monospace;
     transform: translateY(5em);
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
     color: var(--light-blue);
     text-align: justify;
@@ -144,7 +157,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-left: 15px;
     width: 40px;
     border-radius: 5px;
-    font-family: "Monaco", monospace;
+    font-family: "Courier Prime", monospace;
     font-size: 16px;
     transition-duration: 200ms;
 }
@@ -170,7 +183,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: inline;
     padding-right: 30px;
     padding-left: 30px;
-    font-family: "Monaco", monospace;
+    font-family: "Courier Prime", monospace;
     font-size: 16px;
     color: var(--light-blue);
     transition-duration: 200ms;
@@ -194,7 +207,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .intro .content span {
-    font-family: "Monaco", monospace;
+    font-family: "Courier Prime", monospace;
     font-size: 20px;
     color: var(--orange);
 }
@@ -246,8 +259,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .portfolio .accordion {
-    font-family: 'Monaco', monospace;
-    font-weight: 600;
+    font-family: 'Courier Prime Bold', monospace;
     font-size: 22px;
     background-color: var(--dark-blue-transparent);
     border: 2px solid var(--dark-blue-transparent);
@@ -286,7 +298,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .portfolio .panel h2 {
-    font-family: 'Monaco', monospace;
+    font-family: 'Courier Prime', monospace;
     font-weight: 600;
     font-size: 25px;
     padding-left: .5em;
@@ -317,7 +329,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .accordion:after {
     content: '+'; 
-    font-family: "Monaco", monospace;
+    font-family: "Courier Prime", monospace;
     font-size: 20px;
     color: var(--mid-blue);
     float: right;
@@ -332,7 +344,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .accordion:hover::after {
     content: '+'; 
-    font-family: "Monaco", monospace;
+    font-family: "Courier Prime", monospace;
     font-size: 20px;
     color: var(--orange);
     float: right;
@@ -361,7 +373,7 @@ body::-webkit-scrollbar-thumb:hover {
     color: var(--mid-blue);
 }
 .portfolio .sub-info span {
-    font-family: 'Monaco', monospace;
+    font-family: 'Courier Prime', monospace;
     font-weight: 400;
     margin-right: 3em;
     color: var(--light-blue);
@@ -383,7 +395,7 @@ body::-webkit-scrollbar-thumb:hover {
     background: var(--dark-blue);
     padding: 20px 40px 20px 40px;
     color: var(--light-blue);
-    font-family: "Monaco", monospace;
+    font-family: "Courier Prime", monospace;
     font-size: 16px;
     transition-duration: 200ms;
     position: relative;
@@ -403,7 +415,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* FOOTER */
 .footer p {
     color: var(--mid-blue);
-    font-family: "Monaco", monospace;
+    font-family: "Courier Prime", monospace;
     font-size: 12px;
 }
 
