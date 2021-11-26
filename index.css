@@ -18,7 +18,7 @@
     /* Global vars */
     --colour-dark: #383E56;
     --colour-dark-transparent: #383E5600;
-    --colour-mid: #9FB8AD;
+    --colour-mid: #97b1a6;
     --colour-light: #C5D7BD;
     --off-white: #f8e9a1;
     --colour-highlight: #FB743E;
@@ -221,7 +221,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 50px;
     line-height: 1em;
     color: var(--colour-light);
-    text-shadow: 10px 0px var(--colour-dark);
+    text-shadow: 5px 5px var(--colour-dark);
 }
 
 .intro .content h2 {
@@ -230,7 +230,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 50px;
     line-height: 1em;
     color: var(--colour-mid);
-    text-shadow: 10px 0px var(--colour-dark);
+    text-shadow: 5px 5px var(--colour-dark);
 }
 
 .intro img {
@@ -333,7 +333,7 @@ body::-webkit-scrollbar-thumb:hover {
 .accordion:after {
     content: '+'; 
     font-family: "Courier Prime", monospace;
-    font-size: 20px;
+    font-size: 30px;
     color: var(--colour-mid);
     float: right;
     margin-top: -20px;
@@ -348,7 +348,7 @@ body::-webkit-scrollbar-thumb:hover {
 .accordion:hover::after {
     content: '+'; 
     font-family: "Courier Prime", monospace;
-    font-size: 20px;
+    font-size: 30px;
     color: var(--colour-highlight);
     float: right;
     margin-left: 5px;
