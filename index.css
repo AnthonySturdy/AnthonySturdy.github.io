@@ -16,19 +16,20 @@
 
 :root {
     /* Global vars */
-    --dark-blue: #0c203b;
-    --dark-blue-transparent: #1d355700;
-    --mid-blue: #5d9ac0;
-    --light-blue: #a8dadc;
-    --off-white: #f1faee;
-    --orange: #e63946;
-    --orange-tint: #e639460a;
+    --colour-dark: #383E56;
+    --colour-dark-transparent: #383E5600;
+    --colour-mid: #9FB8AD;
+    --colour-light: #C5D7BD;
+    --off-white: #f8e9a1;
+    --colour-highlight: #FB743E;
+    --colour-highlight-tint: #E5D54940a;
 
-    --filter-dark-blue: invert(13%) sepia(28%) saturate(3844%) hue-rotate(197deg) brightness(95%) contrast(89%);
-    --filter-mid-blue: invert(57%) sepia(18%) saturate(939%) hue-rotate(160deg) brightness(95%) contrast(94%);
-    --filter-light-blue: invert(98%) sepia(4%) saturate(3349%) hue-rotate(147deg) brightness(95%) contrast(80%);
-    --filter-off-white: invert(100%) sepia(22%) saturate(1934%) hue-rotate(304deg) brightness(110%) contrast(95%);
-    --filter-orange: invert(35%) sepia(59%) saturate(4493%) hue-rotate(336deg) brightness(93%) contrast(93%);
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+    --filter-dark-blue: invert(23%) sepia(19%) saturate(749%) hue-rotate(190deg) brightness(97%) contrast(94%);
+    --filter-mid-blue: invert(97%) sepia(2%) saturate(2108%) hue-rotate(88deg) brightness(78%) contrast(79%);
+    --filter-light-blue: invert(99%) sepia(82%) saturate(270%) hue-rotate(38deg) brightness(87%) contrast(91%);
+    --filter-off-white: invert(97%) sepia(65%) saturate(719%) hue-rotate(328deg) brightness(101%) contrast(95%);
+    --filter-orange: invert(52%) sepia(72%) saturate(881%) hue-rotate(333deg) brightness(98%) contrast(100%);
 }
 
 /* Row/Column Setup */
@@ -50,8 +51,9 @@
 
 /* Styling */
 html {
-    font-family: "Lucida Sans", sans-serif;
-    background-color: var(--dark-blue);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    background-color: var(--colour-dark);
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -60,11 +62,11 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 30px;
-    color: var(--light-blue);
+    color: var(--colour-light);
 }
 
 span {
-    color: var(--orange);
+    color: var(--colour-highlight);
 }
 
 h2 span {
@@ -76,7 +78,7 @@ h2 span {
 p {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
-    color: var(--light-blue);
+    color: var(--colour-light);
     text-align: justify;
     margin-bottom: 1em;
 }
@@ -88,11 +90,11 @@ p a {
 }
 
 p a:hover {
-    color: var(--orange);
+    color: var(--colour-highlight);
 }
 
 hr {
-    border: 1px solid var(--mid-blue);
+    border: 1px solid var(--colour-mid);
 }
 
 body::-webkit-scrollbar {
@@ -100,29 +102,30 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--dark-blue);          /* color of the tracking area */
+    background: var(--colour-dark);          /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--dark-blue);    /* color of the scroll thumb */
+    background-color: var(--colour-dark);    /* color of the scroll thumb */
     border-radius: 20px;                   /* roundness of the scroll thumb */
-    border: 2px solid var(--mid-blue);   /* creates padding around scroll thumb */
+    border: 2px solid var(--colour-mid);   /* creates padding around scroll thumb */
     transition-duration: 200ms;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    border: 2px solid var(--orange);
+    border: 2px solid var(--colour-highlight);
 }
 
 /* HEADER */
 .header {
     padding: 10px;
+    padding-top: 3px;
     top: 0px;
     right: 0px;
     width: 100%;
-    height: 15vw;
+    height: 6vh;
     position: fixed;
-    background: linear-gradient(180deg, var(--dark-blue) 0%, var(--dark-blue-transparent) 100%);
+    background: var(--colour-dark);
     z-index: 10;
     pointer-events: none;
 }
@@ -148,9 +151,9 @@ body::-webkit-scrollbar-thumb:hover {
 .header button {
     pointer-events: all;
     float: right;
-    background-color: var(--dark-blue-transparent);
-    border: 2px solid var(--light-blue);
-    color: var(--light-blue);
+    background-color: var(--colour-dark-transparent);
+    border: 2px solid var(--colour-light);
+    color: var(--colour-light);
     padding: 0px;
     margin-top: 1px;
     margin-right: 15px;
@@ -163,10 +166,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .header button:hover {
-    border: 2px solid var(--orange);
+    border: 2px solid var(--colour-highlight);
     margin-top: -2px;
     cursor: pointer;
-    color: var(--orange);
+    color: var(--colour-highlight);
 }
 
 .header ul {
@@ -185,12 +188,12 @@ body::-webkit-scrollbar-thumb:hover {
     padding-left: 30px;
     font-family: "Courier Prime", monospace;
     font-size: 16px;
-    color: var(--light-blue);
+    color: var(--colour-light);
     transition-duration: 200ms;
 }
 
 .header li:hover {
-    color: var(--orange);
+    color: var(--colour-highlight);
 }
 
 .header li a {
@@ -201,7 +204,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* INTRO */
 .intro {
     padding-top: 100px;
-    height: 100vh;
+    height: 80vh;
     transform-style: preserve-3d;
     transform: perspective(1000px);
 }
@@ -209,7 +212,7 @@ body::-webkit-scrollbar-thumb:hover {
 .intro .content span {
     font-family: "Courier Prime", monospace;
     font-size: 20px;
-    color: var(--orange);
+    color: var(--colour-highlight);
 }
 
 .intro .content h1 {
@@ -217,8 +220,8 @@ body::-webkit-scrollbar-thumb:hover {
     font-weight: 800;
     font-size: 50px;
     line-height: 1em;
-    color: var(--light-blue);
-    text-shadow: 10px 0px var(--dark-blue);
+    color: var(--colour-light);
+    text-shadow: 10px 0px var(--colour-dark);
 }
 
 .intro .content h2 {
@@ -226,21 +229,22 @@ body::-webkit-scrollbar-thumb:hover {
     font-weight: 600;
     font-size: 50px;
     line-height: 1em;
-    color: var(--mid-blue);
-    text-shadow: 10px 0px var(--dark-blue);
+    color: var(--colour-mid);
+    text-shadow: 10px 0px var(--colour-dark);
 }
 
 .intro img {
     position: absolute;
-    max-width: 40%;
+    margin-right: 10%;
+    max-width: 35%;
     min-width: 300px;
     z-index: -1;
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow:
-    30px 26px 0 0px var(--dark-blue),
-    32px 24px 0 0px var(--orange),
-    32px 28px 0 0px var(--orange),
-    28px 28px 0 0px var(--orange);
+    30px 26px 0 0px var(--colour-dark),
+    32px 24px 0 0px var(--colour-highlight),
+    32px 28px 0 0px var(--colour-highlight),
+    28px 28px 0 0px var(--colour-highlight);
 }
 
 /* ABOUT */
@@ -261,9 +265,9 @@ body::-webkit-scrollbar-thumb:hover {
 .portfolio .accordion {
     font-family: 'Courier Prime Bold', monospace;
     font-size: 22px;
-    background-color: var(--dark-blue-transparent);
-    border: 2px solid var(--dark-blue-transparent);
-    color: var(--light-blue);
+    background-color: var(--colour-dark-transparent);
+    border: 2px solid var(--colour-dark-transparent);
+    color: var(--colour-light);
     cursor: pointer;
     padding: 5px;
     width: calc(100% - 60px);
@@ -275,19 +279,19 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .portfolio .active, .accordion:hover { /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-    border-left: 2px solid var(--mid-blue);
-    border-right: 2px solid var(--mid-blue);
-    border-top: 2px solid var(--mid-blue);
-    color: var(--orange);
+    border-left: 2px solid var(--colour-mid);
+    border-right: 2px solid var(--colour-mid);
+    border-top: 2px solid var(--colour-mid);
+    color: var(--colour-highlight);
 }
 
 .portfolio .panel {    /* Style the accordion panel. Note: hidden by default */
-    border-left: 2px solid var(--mid-blue);
-    border-right: 2px solid var(--mid-blue);
-    border-bottom: 2px solid var(--mid-blue);
+    border-left: 2px solid var(--colour-mid);
+    border-right: 2px solid var(--colour-mid);
+    border-bottom: 2px solid var(--colour-mid);
     padding-left: 1em;
     padding-right: 1em;
-    background-color: var(--dark-blue-transparent);
+    background-color: var(--colour-dark-transparent);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -303,18 +307,17 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 25px;
     padding-left: .5em;
     padding-right: .5em;
-    color: var(--orange);
+    color: var(--colour-highlight);
 }
 
 .portfolio .panel b {
     font-family: 'Montserrat', sans-serif;
-    color: var(--light-blue);
+    color: var(--colour-light);
 }
 
 .portfolio .panel li {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: var(--light-blue);
+    
+    color: var(--colour-light);
 }
 
 .portfolio .panel li a {
@@ -324,14 +327,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .portfolio .panel li a:hover {
-    color: var(--orange);
+    color: var(--colour-highlight);
 }
 
 .accordion:after {
     content: '+'; 
     font-family: "Courier Prime", monospace;
     font-size: 20px;
-    color: var(--mid-blue);
+    color: var(--colour-mid);
     float: right;
     margin-top: -20px;
     margin-right: 9px;
@@ -339,21 +342,21 @@ body::-webkit-scrollbar-thumb:hover {
 
 .active:after {
     content: "-"; 
-    color: var(--orange);
+    color: var(--colour-highlight);
 }
 
 .accordion:hover::after {
     content: '+'; 
     font-family: "Courier Prime", monospace;
     font-size: 20px;
-    color: var(--orange);
+    color: var(--colour-highlight);
     float: right;
     margin-left: 5px;
 }
 
 .active:hover::after {
     content: "-"; 
-    color: var(--orange);
+    color: var(--colour-highlight);
 }
 
 .accordion img {
@@ -370,13 +373,13 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: .5em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: var(--mid-blue);
+    color: var(--colour-mid);
 }
 .portfolio .sub-info span {
     font-family: 'Courier Prime', monospace;
     font-weight: 400;
     margin-right: 3em;
-    color: var(--light-blue);
+    color: var(--colour-light);
 }
 
 /* CONTACT */
@@ -390,11 +393,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contact button {
-    border: 2px solid var(--light-blue);
+    border: 2px solid var(--colour-light);
     border-radius: 5px;
-    background: var(--dark-blue);
+    background: var(--colour-dark);
     padding: 20px 40px 20px 40px;
-    color: var(--light-blue);
+    color: var(--colour-light);
     font-family: "Courier Prime", monospace;
     font-size: 16px;
     transition-duration: 200ms;
@@ -407,14 +410,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contact button:hover {
-    border: 2px solid var(--orange);
-    color: var(--orange);
-    background: var(--orange-tint);
+    border: 2px solid var(--colour-highlight);
+    color: var(--colour-highlight);
+    background: var(--colour-highlight-tint);
 }
 
 /* FOOTER */
 .footer p {
-    color: var(--mid-blue);
+    color: var(--colour-mid);
     font-family: "Courier Prime", monospace;
     font-size: 12px;
 }
