@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Anthony Sturdy</title>
+        <meta name="description" content="Anthony Sturdy is a Games Programming student from the UK, studying at Staffordshire University.">
+
+        <meta name="keywords" content="Anthony Sturdy, Programmer, Game Developer, UK, England, Staffordshire University, Games">
+        <link rel="canonical" href="https://anthonysturdy.co.uk/">
+        
+        <meta property="og:title" content="Anthony Sturdy's Portfolio">
+        <meta property="og:description" content="Anthony Sturdy is a Programmer from the UK. This website features Anthony's portfolio, previous experience, and contact information.">
+        <meta property="og:image" content="https://anthonysturdy.co.uk/images/personal/anthony-sturdy.jpg">
+        <meta property="og:url" content="https://anthonysturdy.co.uk/">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image:alt" content="Anthony Sturdy in London">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <script async src="index.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <div class="row header">
+            <div class="col-5">
+                <ul>
+                    <li><a href="#about"><span>></span>about</a></li>
+                    <li><a href="#portfolio"><span>>></span>portfolio</a></li>
+                    <li><a href="#contact"><span>>>></span>contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-7">
+                <a target="_blank" href="https://twitter.com/AnthonySturdy">            <img src="images/icons/twitter.svg" alt="Twitter logo"> </a>
+                <a target="_blank" href="https://github.com/AnthonySturdy">             <img src="images/icons/github.svg" alt="GitHub logo">  </a>
+                <a target="_blank" href="https://www.linkedin.com/in/anthonysturdy/">   <img src="images/icons/linkedin.svg" alt="LinkedIn logo"></a>
+                <a target="_blank" href="mailto:anthonysturdy@gmail.com">               <img src="images/icons/email.svg" alt="Envelope email icon">   </a>
+            </div>
+        </div>
+
+        <!-- LANDING INTRODUCTION -->
+        <div class="row intro" data-tilt data-tilt-max="1" data-tilt-speed="0.1" data-tilt-reverse="false" data-tilt-reset="false" data-tilt-full-page-listening>
+            <div class="col-3"></div>
+            <div class="col-3 content">
+                <span>Hello 👋 I'm</span>
+                <h1>Anthony,</h1>
+                <h2>a software engineer.</h2>
+            </div>
+            <div class="col-6">
+                <img src="images/personal/anthony-sturdy.jpg" alt="Anthony in London">
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="row about" id="about">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h2><span>></span> about</h2>
+
+                <p>Hello! My name is Anthony. I'm currently a software engineer at <a href="https://unity.com/">Unity</a>, and a <a href="https://www.staffs.ac.uk/">Staffordshire University</a>, BSc Computer Games Programming graduate.</p>
+                <p>I currently work on static analysis tooling for the Unity Editor and Runtimes, the technologies currently used in my day-to-day work are C++, C#, Python, Kubernetes, Docker, and Looker Studio. At university I specialised in using C++ to create games and game engines with DirectX, OpenGL and SDL. Other modules covered using C# for multithreaded/task-based applications and networked applications. I have a keen interest in Graphics and Engine programming.</p>
+                <p>Outside of my work, I also enjoy cooking, exercising, listening to music, and playing video games.</p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <!-- PORTFOLIO -->
+        <div class="row portfolio" id="portfolio">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h2><span>>></span> portfolio</h2>
+
+                <!-- TEMPLATE
+                <button class="accordion">
+                    <div class="col-3">
+                        TITLE
+                        <img src="images/projects/IMAGE">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>YEAR</span> TECHNOLOGIES</div>
+                        <p>SUMMARY INFO</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>MORE INFO HEADER</h2>
+                    <p>MORE INFO</p>
+                </div>
+            -->
+                <!-- Raymarching Renderer -->
+                <button class="accordion">
+                    <div class="col-3">
+                        Ray Marching Renderer
+                        <img src="images/projects/Ray_Marcher_1.png">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2022</span> C++ / DirectX11</div>
+                        <p>A ray marched rendering engine developed for the final year "Games Technology Research Project" module, also referred to as a Final Year Project. The research and development of this artefact, along with the report, spanned across the majority of the final year of University.</p>
+                        <p>The engine uses signed distance functions to render objects, and provides a GUI to interact with the objects within the scene and apply various visual effects.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <p>This project was developed using DirectX11 and C++. ImGui was used for the GUI library and DirectXTK was used for the initial codebase (window handling, etc), as well as for the helper libraries included such as SimpleMath. A 15,000 word report was written alongside the development of the artefact which researched the history of rendering techniques, as well as features of ray marching. The report then analysed different options for the direction of this project followed by the decided design of the project, how it will be planned and how the project will be managed. The report then describes the implementation process of the research followed by a critical evaluation.</p>
+                    <p>For testing this project, a real cornell box was built which allowed for a picture to be taken from inside the cornell box which is then recreated within the renderer in order to compare the results and determine where the renderer performs well and where the renderer requires</p>
+                    <table>
+                        <tr>
+                            <td><img src="images/projects/Cornell_IRL.png"></td>
+                            <td><img src="images/projects/Cornell_Render.png"></td>
+                        </tr>
+                    </table>
+                    <h2>Video</h2>
+                    <p>The following video is a technical overview of the project's features.</p>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X-iwQk8CRiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h2>Links</h2>
+                    <p>Download links and source code will be provided once the work as been graded :)</p>
+                </div>
+
+                <!-- Street Dreams -->
+                <button class="accordion">
+                    <div class="col-3">
+                        Street Dreams
+                        <img src="images/projects/Street_Dreams_1.png">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2021</span> Unity / C#</div>
+                        <p>Street Dreams is a VR shooter which was developed during the period following my internship at Unity and before my third year of university, and was released on Steam in September 2021. The game was made with Unity and tested using a Quest 2.</p>
+                        <p>Gameplay features a procedurally instantiated road, with the goal to use the weapons at your disposal to defend yourself from oncoming enemies. score the most amount of points, and get your name onto the global leaderboards.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>VR shooting</li>
+                        <li>Procedural level generation (instatiating pre-made blocks from pool)</li>
+                        <li>Enemy AI</li>
+                        <li>Various weapon types with different firing modes (e.g. Full & Semi Auto, Shotgun, Grenade launcher)</li>
+                        <li>Various enemy types and appearances</li>
+                        <li>Virtual PC for main menu</li>
+                        <li>Music-reactive skybox</li>
+                        <li>Steamworks integration</li>
+                        <li>Online leaderboard system (via Steamworks)</li>
+                        <li>Steam achievements and player stats tracking</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>Street Dreams was the first game I released on Steam, so the entire process taught me a lot about how much goes into a game release, even a small game like this. Toward the end of the game's development, bug fixing was the task I spent most of my time on, as I did not want to sell something I was unhappy with, so a lot of time was spent testing and asking friends to test and report any bugs found. I also learned during the process to manage the scope of the project, which was important (and difficult to stick to when new ideas crop up) when a defined deadline needs to be met, which, in my case, was the beginning of the university year.</p>
+                    <h2>Links</h2>
+                    <iframe src="https://store.steampowered.com/widget/1711910/" frameborder="0" width="646" height="190"></iframe>
+                    <table>
+                        <tr>
+                            <td><img src="images/projects/Street_Dreams_1.jpg"></td>
+                            <td><img src="images/projects/Street_Dreams_2.jpg"></td>
+                            <td><img src="images/projects/Street_Dreams_3.jpg"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Voxel-o-Defence -->
+                <button class="accordion">
+                    <div class="col-3">
+                        Voxel-o-Defence
+                        <img src="images/projects/Voxel-o-Defence_3.png" alt="Screenshot of procedurally generated island in Voxel-o-Defence">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2020</span> C++ / DirectX11 / Unity</div>
+                        <p>Voxel-o-Defence is a tower-defence game, developed for my Year 2, Semester 3 module: 'Technical Games Production'. We were tasked with creating a game within 6 weeks, in a group of 6 programmers.</p>
+                        <p>I implemented mechanics related to the voxel terrain, a full list of features I implemented can be seen in the expanded information. The voxel terrain system was originally prototyped in Unity while other team members set up DirectX11 boilerplate and camera controls, which allowed me to get the systems working before then porting from C# to C++ in the DirectX application.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>Features</h2>
+                    <p><i>These are the features implemented by me, all features by other team members can be found by <a href="https://trello.com/b/NZ10tshe/voxel-game-tasks" target="_blank">clicking here.</a></i></p>
+                    <ul>
+                        <li>Voxel Modelling Tool</li>
+                        <li>Voxel Terrain Generation</li>
+                        <li>Greedy Meshing</li>
+                        <li>Texturing Greedy Mesh using Texture Atlas</li>
+                        <li>Screen to World Raycasting</li>
+                        <li>Placing Voxel Models at Mouse Position</li>
+                        <li>Model Selection / Build Mode GUI</li>
+                    </ul>
+                    <h2>Team</h2>
+                    <ul>
+                        <li>Anthony Sturdy (Me)</li>
+                        <li><a href="https://sebastianploch.me/" target="_blank">Sebastian Ploch</a></li>
+                        <li><a href="https://joeimplode.github.io/" target="_blank">Joe Pickering</a></li>
+                        <li><a href="https://davidtaylor6130.github.io/" target="_blank">David Taylor</a></li>
+                        <li><a href="https://tom-silver.github.io/" target="_blank">Tom Silver</a></li>
+                        <li><a href="https://krystalhallett.wordpress.com/" target="_blank">Krystal Hallett</a></li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>Working with 5 other people taught me a lot about working in a team and how important project management is. This was the biggest team I had worked with, and without constant communication, team meetings and updating our Trello board, we wouldn't have made nearly as much progress. We did encounter a few problems where people were waiting for other features to be finished before they could finish their own features, so in the future I think planning ahead and knowing which features to complete first in order to counter that would be useful.</p>
+                    <p>With a larger team relying on my code, it also forced me to think about and plan the structure and readability of the code, which I hadn't necessarily had to do before. This lead to me writing much more cleaner and extensible code than I previously have in solo projects.</p>
+                    <h2>Links</h2>
+                    <p><a href="https://github.com/limanniel/Voxel-o-Defense">GitHub Repo</a></p>
+                    <table>
+                        <tr>
+                            <td><img src="images/projects/Voxel-o-Defence_1.png"></td>
+                            <td><img src="images/projects/Voxel-o-Defence_2.png"></td>
+                            <td><img src="images/projects/Voxel-o-Defence_3.png"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- DX11 Ship -->
+                <button class="accordion">
+                    <div class="col-3">
+                        DirectX11 Ship Scene
+                        <img src="images/projects/Dx11Ship_1.png" alt="A 3D render of a ship in a body of water surrounded by rocks">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2019/20</span> C++ / DirectX11</div>
+                        <p>This project is a 3D Scene featuring a ship, water, land and rocks rendered using DirectX 11 and C++. This was my first experience using a programmable pipeline to render 3D objects, so I learned about using Vertex and Pixel shaders to achieve desired effects such as the water.</p>
+                        <p>The application was developed over Semester 1 and 2 for my 'Further Game and Graphical Systems Development' module in my second year at university. The first semester was entirely focussed on rendering and loading assets, and the second semester task was to implement physics to the scene we had created in semester 1.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>Features</h2>
+                    <b>Semester 1</b>
+                    <ul>
+                        <li>Hierarchical Scene Graph / Loading Scene from JSON file</li>
+                        <li>Water Shader</li>
+                        <li>Diffuse, Ambient and Specular Lighting</li>
+                        <li>Specular and Normal mapping</li>
+                        <li>Texturing</li>
+                        <li>Ship Controller</li>
+                        <li>Ship Bouyancy (shader visual effect)</li>
+                        <li>First and Third person cameras</li>
+                        <li>Skybox</li>
+                        <li>Fog</li>
+                    </ul>
+                    <b>Semester 2</b>
+                    <ul>
+                        <li>Velocity & Acceleration</li>
+                        <li>Gravity</li>
+                        <li>Friction</li>
+                        <li>Angular Velocity & Acceleration using Quaternions, Inertia and Torque (Rigidbody)</li>
+                        <li>Narrow Phase Collision Detection (AABB vs AABB, AABB vs Sphere, Sphere vs Sphere)</li>
+                        <li>Particle System</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>The development of this application introduced me to using a programmable pipeline for 3D rendering (had previously only used Fixed Function). It was my first experience using DirectX, which was useful as I had only used OpenGL previously. I learned to use HLSL for writing shaders, which also taught me about how lighting is applied to objects and how image effects such as fog are achieved. Lastly, this improved my C++ and general programming skills, and the original codebase was refactored throughout the development to keep the code clean and maintainable.</p>
+                    <h2>Links</h2>
+                    <p><a href="https://github.com/AnthonySturdy/DX11-ShipScene">GitHub Repo</a></p>
+                    <p><a href="https://github.com/AnthonySturdy/DX11-ShipScene-Physics">GitHub Repo (Physics)</a></p>
+                    <table>
+                        <tr>
+                            <td><img src="images/projects/Dx11Ship_1.png"></td>
+                            <td><img src="images/projects/Dx11Ship_2.png"></td>
+                            <td><img src="images/projects/Dx11Ship_3.png"></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <!-- Multiplayer Racing -->
+                <button class="accordion">
+                    <div class="col-3">
+                        2D Multiplayer Racing Game
+                        <img src="images/projects/RacingMP_1.png" alt="Two cars racing around a 2D track">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2019</span> C# / MonoGame</div>
+                        <p>This project is a chat room application (Similar to Skype or Discord), made using C# and WinForms. The other half of the application is a 2D multiplayer racing game, which uses the chat application to send game invites and announce the winner of the game to other users. The objective of the game is to complete three laps before your opponent does.</p>
+                        <p>There were a few challenges developing the game, as it was my first time using MonoGame and the first time I had created a multiplayer application. The biggest challenge was making sure the correct client recieves the correct information for the game (such as current checkpoint), and that there is persistance between the two clients (such as who is red the car and who is the blue car).</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Race Car Controller</li>
+                        <li>Radius Collision</li>
+                        <li>Two player multiplayer game</li>
+                        <li>TCP and UDP Packet Sending and Recieving</li>
+                        <li>Client username</li>
+                        <li>Profile Picture</li>
+                        <li>Message Sending</li>
+                        <li>Direct Messaging</li>
+                        <li>Image Sending</li>
+                        <li>Client List</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>Developing this application taught me about using C# sockets, networking and using threads for concurrency. I also learned about using MonoGame to create and render a game, and learned how to use Forms to create an application with GUI.</p>
+                    <h2>Links</h2>
+                    <p><a href="https://github.com/AnthonySturdy/Multiplayer-2D-Racing-Game">GitHub Repo</a></p>
+                    <table>
+                        <tr>
+                            <td><img src="images/projects/RacingMP_1.png"></td>
+                            <td><img src="images/projects/RacingMP_2.png"></td>
+                            <td><img src="images/projects/RacingMP_3.png"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- SDL Mario Bros. -->
+                <button class="accordion">
+                    <div class="col-3">
+                        SDL Mario Bros.
+                        <img src="images/projects/SDL_Mario_1.png">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2019</span> C++ / SDL</div>
+                        <p>This project is a remake of Super Mario Bros. using SDL and C++, with an in-game level editor. It was made for my Game Engine Creation module at Staffordshire University (Year 1, Semester 2). For the assignment, we were tasked to remake the original 1983 Mario Bros. game, then expand upon it. To expand the game, I added side-scrolling, more enemies, a level editor, updated collision system, etc.</p>
+                        <p>The biggest challenge while developing the game, was perfecting the collision system. It took a lot of testing and tweaking so the character wouldn't get stuck in the ground or go through any walls.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Character Controller</li>
+                        <li>Animation System</li>
+                        <li>Saving/Loading custom level to file</li>
+                        <li>2D Axis-Aligned Bounding Box Collision</li>
+                        <li>Two types of Enemy</li>
+                        <li>Custom Text Renderer</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>This game taught me about using unfamiliar frameworks (SDL) and taught me about general game mechanics, such as collision detection, creating a character controller that feels good to use, and saving/loading data to a file. Creating the level editor allowed me to gain experience in tools development.</p>
+                    <p>It also helped me improve my C++ and general programming skills.</p>
+                    <h2>Links</h2>
+                    <p><a href="https://github.com/AnthonySturdy/SDL-Mario-Bros.">GitHub Repo</a></p>
+                    <table>
+                        <tr>
+                            <td><img src="images/projects/SDL_Mario_1.png"></td>
+                            <td><img src="images/projects/SDL_Mario_2.png"></td>
+                            <td><img src="images/projects/SDL_Mario_3.png"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Fake 3D Dungeon -->
+                <button class="accordion">
+                    <div class="col-3">
+                        'Fake' 3D Dungeon
+                        <img src="images/projects/Fake_3D_1.png">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2018</span> C++ / S2D</div>
+                        <p>This project is a simple wave-based dungeon game, the game has a 3D effect, but is rendered in a 2D framework called S2D (University's in-house framework). It was made for the my Fundamentals of Game and Graphical Systems Development module (Year 1, Semester 1), for the assignment we were tasked with creating a 2D game using the framework provided.</p>
+                        <p>The 3D effect is achieved by layering multiple sprites per model, each sprite is a horizontal slice of the model, which is then positioned and rotated correctly to appear 3D.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <p>The gameplay is an infinite wave-base game, where slimes spawn randomly, the objective is to survive as long as possible and reach the highest score, which is then uploaded to an online leaderboard to compare with others.</p>
+                    <h2>Features</h2>
+                    <ul>
+                        <li>3D Effect in 2D Framework</li>
+                        <li>Character Controller</li>
+                        <li>Animations</li>
+                        <li>Online Leaderboard (hosted using <a href="http://dreamlo.com/">Dreamlo</a>)</li>
+                        <li>Enemy AI</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>Developing this game taught me about using unfamiliar frameworks (SDL, libcurl), 2D mathematics and other mechanics such as collision detection and game states. I also gained experience using C++ through this project, and learned to keep code clean.</p>
+                    <h2>Links</h2>
+                    <p><a href="https://github.com/AnthonySturdy/Fake-3D-Dungeon-Game">GitHub Repo</a></p>
+                    <table>
+                        <tr>
+                            <td><img src="images/projects/Fake_3D_1.png"></td>
+                            <td><img src="images/projects/Fake_3D_2.png"></td>
+                            <td><img src="images/projects/Fake_3D_3.png"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Reclaim Earth-->
+                <button class="accordion">
+                    <div class="col-3">
+                        Reclaim Earth
+                        <img src="images/projects/Reclaim_Earth_3.png">
+                    </div>
+                    <div class="col-8">
+                        <div class="sub-info"><span>2016</span> C# / Unity</div>
+                        <p>Reclaim Earth is a pixelated sci-fi FPS, originally made for LOWREZJAM and expanded upon later. I worked with two other developers from the US on this project, which was my first experience working in a group. I did the programming and Game Design, Chase Bethea did all sound effects and Music for the game, James Brunner did the artwork and modelling for the game.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </button>
+                <div class="panel">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Shooting Mechanics</li>
+                        <li>Inventory System</li>
+                        <li>Multiple enemy types</li>
+                        <li>Boss battle</li>
+                    </ul>
+                    <h2>What I learned</h2>
+                    <p>This game gave me experience working in a group, and specifically experience working in a remote group. It also gave me experience working a professional composer and artist.</p>
+                    <p>I gained valuable project management experience throughout the development of Reclaim Earth, I brought together all of the individual assets into the final project and implemented them with the mechanics. </p>
+                    <h2>Links</h2>
+                    <p><a href="https://ansitygames.itch.io/reclaim-earth">Download link (itch.io)</a></p>
+                    <table>
+                        <tr>
+                            <td><img src="images/projects/Reclaim_Earth_1.png"></td>
+                            <td><img src="images/projects/Reclaim_Earth_2.png"></td>
+                            <td><img src="images/projects/Reclaim_Earth_3.png"></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="row contact" id="contact">
+            <div class="col-2"></div>
+            <div class="col-4">
+                <h2><span>>>></span> contact</h2>
+                <p>If you'd like to contact me regarding my work, or even just to say Hello, feel free to also use the email to the right or any of the social links at the top of the page. Cheers!</p>
+            </div>
+            <div class="col-4">
+                <button onclick="location.href='mailto:anthonysturdy@gmail.com'" type="button">Email me!</button>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="row footer">
+            <p style="text-align: center;">Copyright Anthony Sturdy © 2024</p>
+        </div>
+
+
+        <script type="text/javascript" src="external/vanilla-tilt.min.js"></script>
+    </body>
+
+</html>
