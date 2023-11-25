@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Cocogoose';
+  src: url("./fonts/cocogoose/Cocogoose\ Pro-trial.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Cocogoose-Semilight';
+  src: url("./fonts/cocogoose/Cocogoose\ Pro\ Semilight-trial.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Cocogoose-light';
+  src: url("./fonts/cocogoose/Cocogoose\ Pro\ Light-trial.ttf") format('truetype');
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Sections */
+section {
+  clip-path: polygon(
+    0 0,
+    100% 3vw,
+    100% 100%,
+    0 calc(100% - 3vw)
+  );
+  height: 20vw;
+  overflow: hidden;
+  padding: 3vw;
+  margin-top: -3vw;
+}
+
+section h1 {
+  font-family: 'Cocogoose';
+}
+
+section h2 {
+  font-family: 'Cocogoose-Semilight';
+}
+
+.gradient-text {
+  background: radial-gradient(62.61% 62.61% at 95.23% 6.02%, #160E71 0%, rgba(19, 13, 92, 0.26) 54.71%, rgba(90, 35, 248, 0) 100%), linear-gradient(72.48deg, #EF516D 2.61%, rgba(106, 103, 227, 0) 56.18%), radial-gradient(45.23% 45.23% at 35.11% -11.02%, #7936AE 0%, rgba(121, 54, 174, 0) 100%), radial-gradient(94.51% 124.88% at 94.32% 94.43%, rgba(65, 244, 255, 0.78) 0%, rgba(131, 218, 255, 0.6552) 32.29%, rgba(99, 175, 240, 0.3978) 64.06%, rgba(43, 90, 211, 0) 100%), linear-gradient(313.04deg, #341D65 0.93%, #604AEA 125.68%); 
+  background-blend-mode: saturation, darken, overlay, color, screen, color-dodge;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+section:nth-of-type(1) {
+  background: radial-gradient(73.4% 100.98% at 95.54% 95.05%, rgba(255, 156, 65, 0.78) 0%, rgba(255, 168, 88, 0) 100%), linear-gradient(197.37deg, #FFF0A4 -0.38%, rgba(255, 240, 164, 0) 101.89%), radial-gradient(58.85% 73.83% at 9.82% 3.13%, rgba(49, 132, 255, 0.8) 0%, rgba(56, 75, 247, 0.208) 52.16%, rgba(62, 246, 246, 0) 100%), linear-gradient(117.39deg, #3E9EF6 3.91%, rgba(238, 43, 183, 0.33) 37.48%, rgba(246, 62, 106, 0) 73.98%), linear-gradient(306.53deg, #FFAADD 19.83%, rgba(255, 170, 221, 0) 97.33%); background-blend-mode: normal,normal,normal,normal,normal,normal;
+  height: 50vw;
+}
+
+section:nth-of-type(2) {
+  background-color: coral;
+}
+
+section:nth-of-type(3) {
+  background-color: green;
+}
+
+section:nth-last-of-type(1) {
+  clip-path: polygon(
+    0 0,
+    100% 3vw,
+    100% 100%,
+    0 100%
+  ); 
+}
