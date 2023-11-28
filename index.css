@@ -31,8 +31,8 @@ section {
   height: 25vw;
   overflow: hidden;
   padding: 4vw;
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
   margin-top: -9vw;
   font-family: "Cocogoose-light";
   color: rgb(239, 229, 216);
@@ -157,12 +157,23 @@ ul.rb li .timestamp {
   color: #FF731D;
   position: relative;
   width: 15vw;
-  font-size: 1.7vw;
-  font-style: italic;
+  font-size: 1.1vw;
+}
+
+ul.rb li h2 {
+  font-size: 3vw;
+}
+
+ul.rb li h3 {
+  font-size: 1.1vw;
+  margin: 0px;
+  opacity: 0.9;
+  font-weight: normal;
+  letter-spacing: .05vw;
 }
 
 .item-title {
   color: #fff;
   font-family: "Cocogoose-light";
-  font-size: 1.5vw;
+  font-size: 1.1vw;
 }
